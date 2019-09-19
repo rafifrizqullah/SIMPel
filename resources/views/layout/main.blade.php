@@ -10,8 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
     <link rel="stylesheet" href="https://www.posindonesia.co.id/vendor/select2/select2.min.css"> 
     <link rel="stylesheet" href="https://www.posindonesia.co.id/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" rel="stylesheet" href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css"/>
-    
+
     <link rel="icon" href="https://www.posindonesia.co.id/./img/favicon.png" />
     
     <title>@yield('title')</title>
@@ -68,12 +67,49 @@
     
     @yield('container')
 
+    <div class="row footer">
+      <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>Tentang Pos</h5>
+              <p>
+                  <a href="/id/about-us">Tentang Kami</a>    
+              </p>
+              <br>
+              <h5>
+                  <a href="/id/complaint">Kontak Pos</a>
+              </h5>
+              <p>
+                  <a href="/id/complaint">Permintaan Informasi</a>   
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-2">
+          <h5>Follow Us</h5>
+          <p>
+              <a href="https://www.facebook.com/posindonesia" target="_blank" rel="nofollow">Facebook</a>
+          </p>
+          <p>
+              <a href="https://twitter.com/@PosIndonesia" target="_blank" rel="nofollow">Twitter</a>
+          </p>
+          <p>
+              <a href="https://www.instagram.com/posindonesia.ig/" target="_blank" rel="nofollow">Instagram</a>
+          </p>
+          <p>
+              <a href="https://www.youtube.com/channel/UCjE1Io1gYXgGCepaXL9k57w" target="_blank" rel="nofollow">Youtube</a>
+          </p>
+          <p>
+              <i class="fa fa-phone"></i>&nbsp; Halo Pos 161
+          </p>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
   </body>
 </html>
