@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="https://www.posindonesia.co.id/vendor/select2/select2.min.css"> 
     <link rel="stylesheet" href="https://www.posindonesia.co.id/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" rel="stylesheet" href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css"/>
-
-    <title>@yield('title')</title>
+    
     <link rel="icon" href="https://www.posindonesia.co.id/./img/favicon.png" />
+    
+    <title>@yield('title')</title>
   </head>
   <body>
 
