@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests;
 use Illuminate\Http\Request;
+use DB;
 
 class RegistrasiController extends Controller
 {
@@ -14,7 +16,8 @@ class RegistrasiController extends Controller
     public function index()
     {
         //
-        return view('registrasi.index');
+        $direktorat = DB::table("direktorat")->pluck("nama", "id");
+        return view('registrasi.index', compact('direktorat'));
     }
 
     /**
@@ -36,6 +39,14 @@ class RegistrasiController extends Controller
     public function store(Request $request)
     {
         //
+        DB::table('pengajuan')->insert([
+            'direktorat' => $request->direktorat,
+            'divisi' => $request->divisi,
+            'bagian' => $request->bagian,
+            'uraian' => $request->uraian
+        ]);
+
+        return redirect('/');
     }
 
     /**
@@ -44,9 +55,24 @@ class RegistrasiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function getDivisi($id)
     {
         //
+        $divisi = DB::table("divisi")->where("id_direktorat",$id)->pluck("nama_divisi","id");
+        return json_encode($divisi);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function getBagian($id)
+    {
+        //
+        $bagian = DB::table("bagian")->where("id_divisi",$id)->pluck("nama_bagian","id");
+        return json_encode($bagian);
     }
 
     /**
