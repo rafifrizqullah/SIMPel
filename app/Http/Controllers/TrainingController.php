@@ -14,9 +14,8 @@ class TrainingController extends Controller
      */
     public function index()
     {
-        //
-        $training = DB::table('training')->get();
-        return view('training.index', ['training' => $training]);
+        //ing')->get();
+        return view('training.index');
     }
 
     /**
