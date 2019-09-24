@@ -19,3 +19,4 @@ Route::get('registrasi', 'RegistrasiController@index');
 Route::get('registrasi/getdirektorat/{id}', 'RegistrasiController@getDivisi');
 Route::get('registrasi/getdivisi/{id}', 'RegistrasiController@getBagian');
 Route::post('registrasi/store', 'RegistrasiController@store');
+Route::post('registrasi/upload', 'RegistrasiController@upload');
