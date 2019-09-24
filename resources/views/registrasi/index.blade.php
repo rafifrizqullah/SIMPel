@@ -8,7 +8,7 @@
 			<div class="col-md-10">
         
         <h1 class="mt-3">Pengajuan Pelatihan</h1>
-        
+
         <form action="registrasi/store" method="POST">
           {{ csrf_field() }}
           <div class="form-group row">
@@ -135,7 +135,13 @@
               <input class="form-control" id="FormControlJumlah" rows="3" readonly>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-group row">
+            <label for="proposal" class="col-sm-2 col-form-label">File Proposal</label>
+            <div class="col-sm-4">
+              <input type="file" class="form-control" id="proposal">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success">Kirim</button>
 				</form>
 			</div>
 		</div>
