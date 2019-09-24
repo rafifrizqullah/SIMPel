@@ -6,110 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <link rel="stylesheet" href="https://www.posindonesia.co.id/vendor/select2/select2.min.css"> 
-    <link rel="stylesheet" href="https://www.posindonesia.co.id/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="https://www.posindonesia.co.id/./img/favicon.png" />
     
     <title>@yield('title')</title>
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-      <a class="navbar-brand" href="/">
-        <img src="https://www.posindonesia.co.id/img/logo-pos.svg" alt="Logo Pos Indonesia">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('/') }}">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('/info-pelatihan') }}">Informasi Pelatihan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('/registrasi') }}">Registrasi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('/berita') }}">Aktivitas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
-          </li>
-        </ul>
-        <a class="btn" id="btn-masuk" href="#">Masuk</a>
-        <form class="form-inline my-2 my-lg-0 search-form" method="GET" action="#">
-          <div class="inner-addon left-addon">
-              <i class="fa fa-search"></i>
-              <input class="form-control mr-sm-2" type="search" name="search" placeholder="Cari" aria-label="Search">
-          </div>            
-        </form>
-        <ul class="navbar-nav flag">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.posindonesia.co.id/id">    
-              <img class="flag " src="https://www.posindonesia.co.id/img/id_flag.jpg" alt="ID Lang">
-            </a>
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link" href="https://www.posindonesia.co.id/en">   
-              <img class="flag  flag-disabled " src="https://www.posindonesia.co.id/img/en_flag.jpg" alt="EN Lang">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    
-    @yield('container')
-
-    <div class="row footer">
-      <div class="col-md-10">
-          <div class="row">
-            <div class="col-md-3">
-              <h5>Tentang Pos</h5>
-              <p>
-                  <a href="/id/about-us">Tentang Kami</a>    
-              </p>
-              <br>
-              <h5>
-                  <a href="/id/complaint">Kontak Pos</a>
-              </h5>
-              <p>
-                  <a href="/id/complaint">Permintaan Informasi</a>   
-              </p>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="/">
+          <img src="https://www.posindonesia.co.id/img/logo-pos.svg" alt="Logo Pos Indonesia">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/') }}">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/info-pelatihan') }}">Informasi Pelatihan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/registrasi') }}">Pengajuan Pelatihan</a>
+            </li>
+            {{-- <li class="nav-item">
+              <a class="nav-link" href="{{ url('/dropdownlist') }}">Aktivitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
+            </li> --}}
+          </ul>
+          <a class="btn" id="btn-masuk" href="#">Masuk</a>
+          <form class="form-inline my-2 my-lg-0 search-form" method="GET" action="#">
+            <div class="inner-addon left-addon">
+                {{-- <i class="fa fa-search"></i> --}}
+                <input class="form-control mr-sm-2" type="search" name="search" placeholder="Cari" aria-label="Search">
+            </div>            
+          </form>
+          <ul class="navbar-nav flag">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.posindonesia.co.id/id">    
+                <img class="flag " src="https://www.posindonesia.co.id/img/id_flag.jpg" alt="ID Lang">
+              </a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="https://www.posindonesia.co.id/en">   
+                <img class="flag  flag-disabled " src="https://www.posindonesia.co.id/img/en_flag.jpg" alt="EN Lang">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      @yield('container')
+  
+      <div class="row footer">
+        <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-3">
+                <h5>Tentang Pos</h5>
+                <p>
+                    <a href="/id/about-us">Tentang Kami</a>    
+                </p>
+                <br>
+                <h5>
+                    <a href="/id/complaint">Kontak Pos</a>
+                </h5>
+                <p>
+                    <a href="/id/complaint">Permintaan Informasi</a>   
+                </p>
+              </div>
             </div>
-          </div>
-      </div>
-      <div class="col-md-2">
-          <h5>Follow Us</h5>
-          <p>
-              <a href="https://www.facebook.com/posindonesia" target="_blank" rel="nofollow">Facebook</a>
-          </p>
-          <p>
-              <a href="https://twitter.com/@PosIndonesia" target="_blank" rel="nofollow">Twitter</a>
-          </p>
-          <p>
-              <a href="https://www.instagram.com/posindonesia.ig/" target="_blank" rel="nofollow">Instagram</a>
-          </p>
-          <p>
-              <a href="https://www.youtube.com/channel/UCjE1Io1gYXgGCepaXL9k57w" target="_blank" rel="nofollow">Youtube</a>
-          </p>
-          <p>
-              <i class="fa fa-phone"></i>&nbsp; Halo Pos 161
-          </p>
+        </div>
       </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> --}}
+    <script type="text/javascript" src="{{ asset('/js/jquery-3.4.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/js/select2.min.js') }}"></script>
+
+    @yield('scripts')
+
   </body>
 </html>
