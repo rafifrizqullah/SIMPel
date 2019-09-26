@@ -67,44 +67,41 @@ class RegistrasiController extends Controller
     public function store(Request $request)
     {
         //
-        $this->validate($request,[
-            'direktorat' => 'required',
-            'divisi' => 'required',
-            'bagian' => 'required',
-            'uraianTugas' => 'required',
-            'kompetensi' => 'required',
-            'temaPelatihan' => 'required',
-            'sasaran' => 'required',
-            'targetPeserta' => 'required',
-            'tempatPenyelenggaraan' => 'required',
-            'tanggalPenyelenggaraan' => 'required',
-            'jumlahPeserta' => 'required',
-            'durasi' => 'required',
-            'fileProposal' => 'required',
-        ]);
+        // $messages = [
+        //     'required' => ':attribute wajib diisi'
+        // ];
+
+        // $this->validate($request,[
+        //     'direktorat' => 'required',
+        //     'divisi' => 'required',
+        //     'bagian' => 'required',
+        //     'uraianTugas' => 'required',
+        //     'kompetensi' => 'required',
+        //     'temaPelatihan' => 'required',
+        //     'sasaran' => 'required',
+        //     'targetPeserta' => 'required',
+        //     'tempatPenyelenggaraan' => 'required',
+        //     'tanggalPenyelenggaraan' => 'required',
+        //     'jumlahPeserta' => 'required',
+        //     'durasi' => 'required',
+        //     'fileProposal' => 'required',
+        // ],$messages);
 
         Submission::create([
             'direktorat' => $request->direktorat,
             'divisi' => $request->divisi,
             'bagian' => $request->bagian,
-            'uraianTugas' => $request->uraian_tugas,
+            'uraian_tugas' => $request->uraianTugas,
             'kompetensi' => $request->kompetensi,
-            'temaPelatihan' => $request->tema_pelatihan,
+            'tema_pelatihan' => $request->temaPelatihan,
             'sasaran' => $request->sasaran,
-            'targetPeserta' => $request->target_peserta,
-            'tempatPenyelenggaraan' => $request->tempat_peyelenggaraan,
-            'tanggalPenyelenggaraan' => $request->tanggal_penyelenggaraan,
-            'jumlahPeserta' => $request->jumlah_peserta,
+            'target_peserta' => $request->targetPeserta,
+            'tempat_penyelenggaraan' => $request->tempatPeyelenggaraan,
+            'tanggal_penyelenggaraan' => $request->tanggalPenyelenggaraan,
+            'jumlah_peserta' => $request->jumlahPeserta,
             'durasi' => $request->durasi,
-            'fileProposal' => $request->file_proposal,
+            'file_proposal' => $request->fileProposal,
         ]);
-
-        // DB::table('pengajuan')->insert([
-        //     'direktorat' => $request->direktorat,
-        //     'divisi' => $request->divisi,
-        //     'bagian' => $request->bagian,
-        //     'uraian' => $request->uraian
-        // ]);
 
         return redirect('/');
     }
