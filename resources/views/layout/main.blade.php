@@ -35,7 +35,7 @@
               <a class="nav-link" href="{{ url('/registrasi') }}">Pengajuan Pelatihan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/dropdownlist') }}">Aktivitas</a>
+              <a class="nav-link" href="{{ url('#') }}">Aktivitas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
