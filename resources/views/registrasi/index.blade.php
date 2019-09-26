@@ -18,11 +18,8 @@
               <select class="form-control" name="direktorat" id="direktorat">
                 
                 <option>-- pilih direktorat --</option>
-                {{-- @foreach ($direktorat as $key => $value)
+                @foreach ($direktorat as $key => $value)
                   <option value="{{ $key }}">{{ $value }}</option>
-                @endforeach --}}
-                @foreach ($direktorat as $dir)
-                  <option value="{{ $dir->id }}">{{ ucfirst($dir->nama) }}</option>
                 @endforeach
 
               </select>
@@ -158,39 +155,6 @@
 
 @section('scripts')
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('#direktorat').on('change', function(){
-        var idDirektorat = $(this).val();
-        if (idDirektorat) {
-          $.ajax({
-            url : '/registrasi/getdirektorat/' +idDirektorat,
-            type : "GET",
-            // data : {"_token":"{{ csrf_token() }}"},
-            dataType : "json",
-            success:function(data) {
-              // console.log(data);
-              if (data) {
-                $('#divisi').empty();
-                $('#divisi').focus;
-                $('#divisi').append('<option value="">-- pilih divisi --</option>');
-                $.each(data, function(key, value) {
-                  $('select[name="divisi"]').append('<option value="'+ key +'">' + value.nama_divisi + '</option>');
-                });
-              } else {
-                $('#divisi').empty();
-              }
-            }
-          });
-        } else {
-          $('#divisi').empty();
-        }
-      });
-    });
-  </script>
-@endsection
-
-{{-- @section('scripts')
-  <script type="text/javascript">
     $(document).ready(function()
     {
       $('select[name="direktorat"]').on('change', function(){
@@ -203,18 +167,22 @@
             success:function(data)
             {
               console.log(data);
-              $('select[name="divisi"]').html('<option value="">-- pilih divisi --</option>');
-              $('select[name="bagian"]').html('<option value="">-- pilih bagian --</option>');
-              $.each(data, function(key, value){
-                $('select[name="divisi"]').append('<option value="'+ key +'">' + value + '</option>');
-              });
+              if (data) {
+                $('#divisi').empty();
+                $('#divisi').focus;
+                $('#divisi').append('<option value="">-- pilih divisi --</option>');
+                $.each(data, function(key, value) {
+                  $('select[name="divisi"]').append('<option value="'+ key +'">' + value + '</option>');
+                });
+              } else {
+                $('#divisi').empty();
+              }
             }
           });
         }
         else
         {
-          $('select[name="divisi"]').html('<option value="">-- pilih divisi --</option>');
-          $('select[name="bagian"]').html('<option value="">-- pilih bagian --</option>');
+          $('#divisi').empty();
         }
       });
       $('select[name="divisi"]').on('change', function(){
@@ -227,18 +195,24 @@
             success:function(data)
             {
               console.log(data);
-              $('select[name="bagian"]').html('<option value="">-- pilih bagian --</option>');
-              $.each(data, function(key, value){
-                $('select[name="bagian"]').append('<option value="'+ key +'">' + value + '</option>');
-              });
+              if (data) {
+                $('#bagian').empty();
+                $('#bagian').focus;
+                $('#bagian').append('<option value="">-- pilih bagian --</option>');
+                $.each(data, function(key, value) {
+                  $('select[name="bagian"]').append('<option value="'+ key +'">' + value + '</option>');
+                });
+              } else {
+                $('#bagian').empty();
+              }
             }
           });
         }
         else
         {
-          $('select[name="bagian"]').html('<option value="">-- pilih bagian --</option>');
+          $('#bagian').empty();
         }
       });
     });
   </script>
-@endsection --}}
+@endsection
