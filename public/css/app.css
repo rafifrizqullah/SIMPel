@@ -11,3 +11,9 @@
 .navbar-brand img {
   height: 62px;
 }
+
+.map {
+  height: 400px; 
+  width: 1000px;
+  margin: auto;
+}
