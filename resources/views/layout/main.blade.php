@@ -34,12 +34,12 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/registrasi') }}">Pengajuan Pelatihan</a>
             </li>
-            {{-- <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="{{ url('/dropdownlist') }}">Aktivitas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
-            </li> --}}
+            </li>
           </ul>
           <a class="btn" id="btn-masuk" href="#">Masuk</a>
           <form class="form-inline my-2 my-lg-0 search-form" method="GET" action="#">
@@ -48,7 +48,7 @@
                 <input class="form-control mr-sm-2" type="search" name="search" placeholder="Cari" aria-label="Search">
             </div>            
           </form>
-          <ul class="navbar-nav flag">
+          {{-- <ul class="navbar-nav flag">
             <li class="nav-item">
               <a class="nav-link" href="https://www.posindonesia.co.id/id">    
                 <img class="flag " src="https://www.posindonesia.co.id/img/id_flag.jpg" alt="ID Lang">
@@ -59,7 +59,7 @@
                 <img class="flag  flag-disabled " src="https://www.posindonesia.co.id/img/en_flag.jpg" alt="EN Lang">
               </a>
             </li>
-          </ul>
+          </ul> --}}
         </div>
       </nav>
       

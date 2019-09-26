@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests;
+// use DB;
+use App\Direktorat;
+// use App\Divisi;
+// use App\Bagian;
+use App\Submission;
 use Illuminate\Http\Request;
-use DB;
 
 class RegistrasiController extends Controller
 {
@@ -16,10 +19,41 @@ class RegistrasiController extends Controller
     public function index()
     {
         //
-        $direktorat = DB::table("direktorat")->pluck("nama", "id");
+        // $direktorat = DB::table("direktorat")->pluck("nama", "id");
+        $direktorat = Direktorat::all();
         return view('registrasi.index', compact('direktorat'));
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function getDivisi($id)
+    {
+        //
+        // $divisi = DB::table("divisi")->where("id_direktorat",$id)->pluck("nama_divisi","id");
+        // return json_encode($divisi);
+        $divisi = Divisi::where('id_direktorat', $id)->get();
+        return response()->json($divisi);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function getBagian($id)
+    {
+        //
+        // $bagian = DB::table("bagian")->where("id_divisi",$id)->pluck("nama_bagian","id");
+        // return json_encode($bagian);
+        $bagian = Bagian::where('id_divisi', $id)->get();
+        return response()->json($bagian);
+    }
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -39,40 +73,57 @@ class RegistrasiController extends Controller
     public function store(Request $request)
     {
         //
-        DB::table('pengajuan')->insert([
+        $this->validate($request,[
+            'direktorat' => 'required',
+            'divisi' => 'required',
+            'bagian' => 'required',
+            'uraianTugas' => 'required',
+            'kompetensi' => 'required',
+            'temaPelatihan' => 'required',
+            'sasaran' => 'required',
+            'targetPeserta' => 'required',
+            'tempatPenyelenggaraan' => 'required',
+            'tanggalPenyelenggaraan' => 'required',
+            'jumlahPeserta' => 'required',
+            'durasi' => 'required',
+            'fileProposal' => 'required',
+        ]);
+
+        Submission::create([
             'direktorat' => $request->direktorat,
             'divisi' => $request->divisi,
             'bagian' => $request->bagian,
-            'uraian' => $request->uraian
+            'uraianTugas' => $request->uraian_tugas,
+            'kompetensi' => $request->kompetensi,
+            'temaPelatihan' => $request->tema_pelatihan,
+            'sasaran' => $request->sasaran,
+            'targetPeserta' => $request->target_peserta,
+            'tempatPenyelenggaraan' => $request->tempat_peyelenggaraan,
+            'tanggalPenyelenggaraan' => $request->tanggal_penyelenggaraan,
+            'jumlahPeserta' => $request->jumlah_peserta,
+            'durasi' => $request->durasi,
+            'fileProposal' => $request->file_proposal,
         ]);
+
+        // DB::table('pengajuan')->insert([
+        //     'direktorat' => $request->direktorat,
+        //     'divisi' => $request->divisi,
+        //     'bagian' => $request->bagian,
+        //     'uraian' => $request->uraian
+        // ]);
 
         return redirect('/');
     }
 
     /**
-     * Display the specified resource.
+     * Store a newly created resource in storage.
      *
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function getDivisi($id)
+    public function upload(Request $request)
     {
         //
-        $divisi = DB::table("divisi")->where("id_direktorat",$id)->pluck("nama_divisi","id");
-        return json_encode($divisi);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function getBagian($id)
-    {
-        //
-        $bagian = DB::table("bagian")->where("id_divisi",$id)->pluck("nama_bagian","id");
-        return json_encode($bagian);
     }
 
     /**
