@@ -34,12 +34,12 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/registrasi') }}">Pengajuan Pelatihan</a>
             </li>
-            {{-- <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="{{ url('/dropdownlist') }}">Aktivitas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
-            </li> --}}
+            </li>
           </ul>
           <a class="btn" id="btn-masuk" href="#">Masuk</a>
           <form class="form-inline my-2 my-lg-0 search-form" method="GET" action="#">
