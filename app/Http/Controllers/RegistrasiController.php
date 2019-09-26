@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use DB;
-// use App\Direktorat;
+// use DB;
+use App\Direktorat;
 // use App\Divisi;
 // use App\Bagian;
 use App\Submission;
@@ -19,8 +19,8 @@ class RegistrasiController extends Controller
     public function index()
     {
         //
-        $direktorat = DB::table("direktorat")->pluck("nama", "id");
-        // $direktorat = Direktorat::all();
+        // $direktorat = DB::table("direktorat")->pluck("nama", "id");
+        $direktorat = Direktorat::all();
         return view('registrasi.index', compact('direktorat'));
     }
 
@@ -33,10 +33,10 @@ class RegistrasiController extends Controller
     public function getDivisi($id)
     {
         //
-        $divisi = DB::table("divisi")->where("id_direktorat",$id)->pluck("nama_divisi","id");
-        return json_encode($divisi);
-        // $divisi = Divisi::where('id_direktorat', $id)->get();
-        // return response()->json($divisi);
+        // $divisi = DB::table("divisi")->where("id_direktorat",$id)->pluck("nama_divisi","id");
+        // return json_encode($divisi);
+        $divisi = Divisi::where('id_direktorat', $id)->get();
+        return response()->json($divisi);
     }
 
     /**
@@ -48,10 +48,10 @@ class RegistrasiController extends Controller
     public function getBagian($id)
     {
         //
-        $bagian = DB::table("bagian")->where("id_divisi",$id)->pluck("nama_bagian","id");
-        return json_encode($bagian);
-    //     $bagian = Bagian::where('id_divisi', $id)->get();
-    //     return response()->json($bagian);
+        // $bagian = DB::table("bagian")->where("id_divisi",$id)->pluck("nama_bagian","id");
+        // return json_encode($bagian);
+        $bagian = Bagian::where('id_divisi', $id)->get();
+        return response()->json($bagian);
     }
     
     /**
