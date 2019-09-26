@@ -10,6 +10,16 @@
         <h1 class="mt-3">Pengajuan Pelatihan</h1>
         <br>
 
+        @if (count($errors) > 0)
+          <div class="alert alert-danger">
+            <ul>
+              @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+              @endforeach
+            </ul>
+          </div>
+        @endif
+
         <form action="registrasi/store" method="POST">
           {{ csrf_field() }}
           <div class="form-group row">
@@ -67,7 +77,7 @@
           <div class="form-group row">
             <label for="temaPelatihan" class="col-sm-2 col-form-label">Tema Pelatihan yang diusulkan</label>
             <div class="col-9">
-              <textarea class="form-control" id="temaPelatihan" rows="3"></textarea>
+              <textarea class="form-control" name="temaPelatihan" id="temaPelatihan" rows="3"></textarea>
             </div>
 					</div>
 					<div class="form-group row">
@@ -97,13 +107,13 @@
           <div class="form-group row">
             <label for="jumlahPeserta" class="col-sm-2 col-form-label">Jumlah Peserta</label>
             <div class="col-5">
-              <input class="form-control" id="jumlahPeserta" rows="3">
+              <input class="form-control" id="jumlahPeserta" rows="3" value="">
             </div>
           </div>
           <div class="form-group row">
             <label for="durasi" class="col-sm-2 col-form-label">Durasi (Jam)</label>
             <div class="col-5">
-              <input class="form-control" id="durasi" rows="3">
+              <input class="form-control" id="durasi" rows="3" value="">
             </div>
           </div>
           <br>
@@ -119,25 +129,25 @@
           <div class="form-group row">
             <label for="uangFasilitator" class="col-sm-2 col-form-label">Uang Fasilitator</label>
             <div class="col-4">
-              <input class="form-control" id="uangFasilitator" rows="3" readonly>
+              <input class="form-control" id="uangFasilitator" rows="3" value="" readonly>
             </div>
           </div>
           <div class="form-group row">
             <label for="narasumber" class="col-sm-2 col-form-label">Narasumber Eksternal</label>
             <div class="col-4">
-              <input class="form-control" id="narasumber" rows="3">
+              <input class="form-control" id="narasumber" rows="3" value="">
             </div>
           </div>
           <div class="form-group row">
             <label for="akomodasi" class="col-sm-2 col-form-label">Akomodasi</label>
             <div class="col-4">
-              <input class="form-control" id="akomodasi" rows="3">
+              <input class="form-control" id="akomodasi" rows="3" value="">
             </div>
           </div>
           <div class="form-group row">
             <label for="jumlah" class="col-sm-2 col-form-label">Jumlah</label>
             <div class="col-4">
-              <input class="form-control" id="jumlah" rows="3" readonly>
+              <input class="form-control" id="jumlah" rows="3" value="" readonly>
             </div>
           </div>
           <div class="form-group row">
