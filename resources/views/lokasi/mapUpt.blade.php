@@ -3,6 +3,7 @@
 @section('title', 'Pos Indonesia - Lokasi UPT')
 
 @section('container')
+
 <h3>Lokasi Kantor - UPT</h3>
 <div id="map"></div>
 <script type="text/javascript">
@@ -20,15 +21,13 @@
 			['Regional 10 Makassar', -5.164130, 119.434747, "<table border='1' class='table table-hovered table-bordered table-stripped'><tr><th>Uraian</th><th>Pemerintah</th><th>Swasta</th></tr><tr style='font-weight:bold'><td >SATKER/BLK/LPKS/BLK Komunitas</td><td style='text-align:center'>19 </td><td style='text-align:center'>272 </td></tr><tr style='font-weight:bold'><td> Instruktur</td><td style='text-align:center'>207  </td><td style='text-align:center'>490  </td></tr><tr style='font-weight:bold'><td> Tenaga Pelatihan</td><td style='text-align:center'>21  </td><td style='text-align:center'>519  </td></tr></table>"],
 			['Regional 11 Jayapura', -2.522577, 140.713324, "<table border='1' class='table table-hovered table-bordered table-stripped'><tr><th>Uraian</th><th>Pemerintah</th><th>Swasta</th></tr><tr style='font-weight:bold'><td >SATKER/BLK/LPKS/BLK Komunitas</td><td style='text-align:center'>19 </td><td style='text-align:center'>272 </td></tr><tr style='font-weight:bold'><td> Instruktur</td><td style='text-align:center'>207  </td><td style='text-align:center'>490  </td></tr><tr style='font-weight:bold'><td> Tenaga Pelatihan</td><td style='text-align:center'>21  </td><td style='text-align:center'>519  </td></tr></table>"]
 		];
-		
-		var map = new google.maps.Map(
-			document.getElementById('map'), {zoom: 4, center: new google.maps.LatLng(-1.992959, 121.281986)});
-			
-			var infowindow = new google.maps.InfoWindow();
-			var marker, i;
 
-			for (i = 0; i < locations.length; i++) {  
-				marker = new google.maps.Marker({
+		var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: new google.maps.LatLng(-1.992959, 121.281986)});			
+		var infowindow = new google.maps.InfoWindow();
+		var marker, i;
+
+		for (i = 0; i < locations.length; i++) {  
+			marker = new google.maps.Marker({
 				position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 				map: map
 			});
@@ -45,7 +44,9 @@
 					infowindow.setContent("<div style = 'width:320px;min-height:40px'> <h3>  " + locations[i][0] + "</h3>"+ locations[i][3] +"</div>");
 					infowindow.open(map, marker);
 				}
-           	})(marker, i));
+   	      	})(marker, i));
 		}
 	}
+</script>
+
 @endsection
