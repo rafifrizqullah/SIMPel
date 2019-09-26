@@ -95,6 +95,8 @@
     <script type="text/javascript" src="{{ asset('/js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/js/select2.min.js') }}"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwsObmp3nGQpl5ASYrUzeIWheWa0mKQKI&callback=initMap"></script>
 
     @yield('scripts')
 
