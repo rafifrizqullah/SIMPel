@@ -1,4 +1,4 @@
-@extends('layout/main')
+@extends('layout.main')
 
 @section('title', 'Pos Indonesia - Pengajuan Pelatihan')
 		
@@ -20,7 +20,7 @@
           </div>
         @endif
 
-        <form action="registrasi/store" method="POST">
+        <form action="registrasi/store" method="POST" enctype="multipart/form-data">
           {{ csrf_field() }}
           <div class="form-group row">
 						<label for="direktorat" class="col-sm-2 col-form-label">Direktorat</label>
@@ -83,31 +83,31 @@
 					<div class="form-group row">
             <label for="sasaran" class="col-sm-2 col-form-label">Sasaran yang ingin dicapai</label>
             <div class="col-9">
-              <textarea class="form-control" id="sasaran" rows="3"></textarea>
+              <textarea class="form-control" name="sasaran" id="sasaran" rows="3"></textarea>
             </div>
 					</div>
 					<div class="form-group row">
             <label for="targetPeserta" class="col-sm-2 col-form-label">Target Peserta</label>
             <div class="col-9">
-              <textarea class="form-control" id="targetPeserta" rows="3"></textarea>
+              <textarea class="form-control" name="targetPeserta" id="targetPeserta" rows="3"></textarea>
             </div>
 					</div>
 					<div class="form-group row">
             <label for="tempatPeyelenggaraan" class="col-sm-2 col-form-label">Tempat Penyelenggaraan</label>
             <div class="col-9">
-              <textarea class="form-control" id="tempatPenyelenggaraan" rows="3"></textarea>
+              <textarea class="form-control" name="tempatPenyelenggaraan" id="tempatPenyelenggaraan" rows="3"></textarea>
             </div>
           </div>
           <div class="form-group row date" data-provide="datepicker">
             <label for="tanggalPenyelenggaraan" class="col-sm-2 col-form-label">Tanggal Penyelenggaraan</label>
             <div class="col-5">
-              <input type="date" class="form-control" id="tanggalPenyelenggaraan">
+              <input type="date" class="form-control" name="tanggalPenyelenggaraan" id="tanggalPenyelenggaraan">
             </div>
           </div>
           <div class="form-group row">
             <label for="jumlahPeserta" class="col-sm-2 col-form-label">Jumlah Peserta</label>
             <div class="col-5">
-              <input class="form-control" id="jumlahPeserta" rows="3" value="">
+              <input class="form-control" name="jumlahPeserta" id="jumlahPeserta" rows="3" value="">
             </div>
           </div>
           <div class="form-group row">
@@ -153,7 +153,7 @@
           <div class="form-group row">
             <label for="fileProposal" class="col-sm-2 col-form-label">File Proposal</label>
             <div class="col-sm-4">
-              <input type="file" class="form-control" id="fileProposal">
+              <input type="file" class="form-control" name="fileProposal" id="fileProposal">
             </div>
           </div>
           <button type="submit" class="btn btn-success">Kirim</button>
@@ -182,7 +182,7 @@
                 $('#divisi').focus;
                 $('#divisi').append('<option value="">-- pilih divisi --</option>');
                 $.each(data, function(key, value) {
-                  $('select[name="divisi"]').append('<option value="'+ key +'">' + value + '</option>');
+                  $('select[name="divisi"]').append('<option value="'+ key +'">' + value + '</option>'); 
                 });
               } else {
                 $('#divisi').empty();
