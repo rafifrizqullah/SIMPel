@@ -32,7 +32,7 @@
               <a class="nav-link" href="{{ url('/info-pelatihan') }}">Informasi Pelatihan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ url('/registrasi') }}">Pengajuan Pelatihan</a>
+              <a class="nav-link" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url('#') }}">Aktivitas</a>
