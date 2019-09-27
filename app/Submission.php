@@ -25,5 +25,5 @@ class Submission extends Model
      *
      * @var array
      */
-    protected $fillable = ['direktorat','divisi', 'bagian', 'uraian_tugas', 'kompetensi', 'sasaran', 'target_peserta', 'tempat_penyelenggaraan', 'tanggal_penyelenggaraan', 'jumlah_peserta', 'durasi', 'tema_pelatihan', 'file_proposal'];
+    protected $fillable = ['direktorat','divisi', 'bagian', 'uraian_tugas', 'kompetensi', 'sasaran', 'target_peserta', 'tempat_penyelenggaraan', 'tanggal_penyelenggaraan', 'jumlah_peserta', 'durasi', 'uang_saku', 'tema_pelatihan', 'file_proposal'];
 }
