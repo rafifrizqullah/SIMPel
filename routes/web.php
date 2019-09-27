@@ -15,8 +15,7 @@ Route::get('/', 'PagesController@home');
 Route::get('/info-pelatihan', 'TrainingController@index');
 Route::get('/about', 'PagesController@about');
 
-Route::get('registrasi', 'RegistrasiController@index');
-Route::get('registrasi/getdirektorat/{id}', 'RegistrasiController@getDivisi');
-Route::get('registrasi/getdivisi/{id}', 'RegistrasiController@getBagian');
-Route::post('registrasi/store', 'RegistrasiController@store');
-// Route::post('registrasi/store', 'RegistrasiController@upload');
+Route::get('submission', 'SubmissionController@index');
+Route::get('submission/getdirektorat/{id}', 'SubmissionController@getDivisi');
+Route::get('submission/getdivisi/{id}', 'SubmissionController@getBagian');
+Route::post('submission/store', 'SubmissionController@store');
