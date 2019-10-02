@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    PT. Pos Indonesia
+                    Laravel
                 </div>
 
                 <div class="links">
