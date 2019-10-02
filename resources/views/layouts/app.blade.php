@@ -8,16 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="https://www.posindonesia.co.id/./img/favicon.png" />
+    <link rel="stylesheet" href="{{ asset('/css/font-awesome.css') }}">
+    <link rel="icon" href="{{ asset('/img/favicon.png') }}" />
     
     <title>@yield('title')</title>
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
         <a class="navbar-brand" href="/">
-          <img src="https://www.posindonesia.co.id/img/logo-pos.svg" alt="Logo Pos Indonesia">
+          <img src="{{ asset('/img/logo-pos.svg') }}" alt="Logo Pos Indonesia">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,11 +44,11 @@
           <a class="btn" id="btn-masuk" href="#">Masuk</a>
           <form class="form-inline my-2 my-lg-0 search-form" method="GET" action="#">
             <div class="inner-addon left-addon">
-                {{-- <i class="fa fa-search"></i> --}}
+                <i class="fa fa-search"></i>
                 <input class="form-control mr-sm-2" type="search" name="search" placeholder="Cari" aria-label="Search">
             </div>            
           </form>
-          {{-- <ul class="navbar-nav flag">
+          <ul class="navbar-nav flag">
             <li class="nav-item">
               <a class="nav-link" href="https://www.posindonesia.co.id/id">    
                 <img class="flag " src="https://www.posindonesia.co.id/img/id_flag.jpg" alt="ID Lang">
@@ -59,13 +59,13 @@
                 <img class="flag  flag-disabled " src="https://www.posindonesia.co.id/img/en_flag.jpg" alt="EN Lang">
               </a>
             </li>
-          </ul> --}}
+          </ul>
         </div>
       </nav>
       
-      @yield('container')
+      @yield('content')
   
-      <div class="row footer">
+      <div class="">
         <div class="col-md-10">
             <div class="row">
               <div class="col-md-3">

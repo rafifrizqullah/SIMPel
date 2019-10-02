@@ -1,9 +1,9 @@
-@extends('layout.main')
+@extends('layouts.app')
 
 @section('title', 'Pos Indonesia - Pengajuan Pelatihan')
 		
-@section('container')
-	<div class="container">
+@section('content')
+	<div class="container submission-form">
 		<div class="row">
 			<div class="col-md-10">
         

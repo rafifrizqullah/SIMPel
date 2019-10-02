@@ -1,4 +1,4 @@
-@extends('layout/main')
+@extends('layout.app')
 
 @section('title', 'Pos Indonesia - Lokasi Regional')
 
