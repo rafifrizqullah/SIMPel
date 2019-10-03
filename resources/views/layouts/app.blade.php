@@ -12,9 +12,6 @@
 	{{-- <title>{{ config('app.name', 'Pos Indonesia') }}</title> --}}
 	<title>@yield('title')</title>
 
-	<!-- Scripts -->
-	<script src="{{ asset('js/app.js') }}" defer></script>
-
 	<!-- Fonts -->
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -105,13 +102,46 @@
 						<a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
 					</li> --}}
 				</ul>
-				<a class="btn" id="btn-masuk" href="#">Masuk</a>
+				
+				{{-- <a class="btn" id="btn-masuk" href="#">Masuk</a> --}}
 				<form class="form-inline my-2 my-lg-0 search-form" method="GET" action="#">
 					<div class="inner-addon left-addon">
 							<i class="fa fa-search"></i>
 							<input class="form-control mr-sm-2" type="search" name="search" placeholder="Cari" aria-label="Search">
 					</div>            
 				</form>
+				<!-- Right Side Of Navbar -->
+				<ul class="navbar-nav">
+						<!-- Authentication Links -->
+						@guest
+						<li class="nav-item">
+							<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+						</li>
+						@if (Route::has('register'))
+							<li class="nav-item">
+								<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+							</li>
+						@endif
+						@else
+							<li class="nav-item dropdown">
+								<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+									{{ Auth::user()->name }} <span class="caret"></span>
+								</a>
+		
+								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="{{ route('logout') }}"
+										onclick="event.preventDefault();
+										document.getElementById('logout-form').submit();">
+										{{ __('Logout') }}
+									</a>
+		
+									<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+										@csrf
+									</form>
+								</div>
+							</li>
+						@endguest
+					</ul>
 				<ul class="navbar-nav flag">
 					<li class="nav-item">
 						<a class="nav-link" href="https://www.posindonesia.co.id/id">    
@@ -256,5 +286,11 @@
 			</div>    
 		</div>
 	</div>
+	
+	<!-- Scripts -->
+	<script src="{{ asset('js/app.js') }}"></script>
+
+	@yield('scripts')
+
 </body>
 </html>
