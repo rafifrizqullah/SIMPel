@@ -28,9 +28,9 @@
               <select class="form-control" name="direktorat" id="direktorat">
                 
                 <option>-- pilih direktorat --</option>
-                {{-- @foreach ($direktorat as $key => $value)
+                @foreach ($direktorat as $key => $value)
                   <option value="{{ $key }}">{{ $value }}</option>
-                @endforeach --}}
+                @endforeach
 
               </select>
             </div>
