@@ -2,10 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Direktorat;
+use App\Divisi;
+use App\Bagian;
 use Illuminate\Http\Request;
 
 class SubmissionController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +20,8 @@ class SubmissionController extends Controller
      */
     public function index()
     {
-        return view('pages.submission');
+        $direktorat = Direktorat::pluck("nama","id");
+        return view('pages.submission', compact('direktorat'));
     }
 
     /**
@@ -36,6 +44,32 @@ class SubmissionController extends Controller
     {
         //
     }
+
+    /**
+	 * Display the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function getDivisi($id)
+	{
+			//
+			$divisi = Divisi::where('id_direktorat', $id)->pluck("nama_divisi","id");
+			return response()->json($divisi);
+	}
+
+	/**
+	 * Display the specified resource.
+	 *
+	 * @param  int  $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function getBagian($id)
+	{
+			//
+			$bagian = Bagian::where('id_divisi', $id)->pluck("nama_bagian","id");
+			return response()->json($bagian);
+	}
 
     /**
      * Display the specified resource.
