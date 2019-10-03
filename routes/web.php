@@ -27,4 +27,7 @@ Route::get('/', 'PagesController@index');
 Route::get('/regional', 'PagesController@regional');
 Route::get('/about', 'PagesController@about');
 
-Route::resource('/submission', 'SubmissionController');
+Route::get('submission', 'SubmissionController@index');
+Route::get('submission/getdirektorat/{id}', 'SubmissionController@getDivisi');
+Route::get('submission/getdivisi/{id}', 'SubmissionController@getBagian');
+Route::post('submission/store', 'SubmissionController@store');
