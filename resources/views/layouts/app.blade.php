@@ -13,8 +13,8 @@
 	<title>@yield('title')</title>
 
 	<!-- Fonts -->
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Styles -->
@@ -104,45 +104,45 @@
 				</ul>
 				
 				{{-- <a class="btn" id="btn-masuk" href="#">Masuk</a> --}}
-				<form class="form-inline my-2 my-lg-0 search-form" method="GET" action="#">
-					<div class="inner-addon left-addon">
-							<i class="fa fa-search"></i>
-							<input class="form-control mr-sm-2" type="search" name="search" placeholder="Cari" aria-label="Search">
-					</div>            
-				</form>
 				<!-- Right Side Of Navbar -->
-				<ul class="navbar-nav">
-						<!-- Authentication Links -->
-						@guest
+				<ul class="navbar-nav ml-auto mr-4">
+					<form class="form-inline my-2 my-lg-0 search-form" method="GET" action="#">
+						<div class="inner-addon left-addon">
+								<i class="fa fa-search"></i>
+								<input class="form-control mr-sm-2" type="search" name="search" placeholder="Cari" aria-label="Search">
+						</div>            
+					</form>
+					<!-- Authentication Links -->
+					@guest
+					<li class="nav-item" id="masuk">
+						<a class="nav-link" href="{{ route('login') }}">{{ __('Masuk') }}</a>
+					</li>
+					@if (Route::has('register'))
 						<li class="nav-item">
-							<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+							<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
 						</li>
-						@if (Route::has('register'))
-							<li class="nav-item">
-								<a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-							</li>
-						@endif
-						@else
-							<li class="nav-item dropdown">
-								<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-									{{ Auth::user()->name }} <span class="caret"></span>
+					@endif
+					@else
+						<li class="nav-item dropdown">
+							<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+								{{ Auth::user()->name }} <span class="caret"></span>
+							</a>
+	
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="{{ route('logout') }}"
+									onclick="event.preventDefault();
+									document.getElementById('logout-form').submit();">
+									{{ __('Logout') }}
 								</a>
-		
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="{{ route('logout') }}"
-										onclick="event.preventDefault();
-										document.getElementById('logout-form').submit();">
-										{{ __('Logout') }}
-									</a>
-		
-									<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-										@csrf
-									</form>
-								</div>
-							</li>
-						@endguest
-					</ul>
-				<ul class="navbar-nav flag">
+	
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+									@csrf
+								</form>
+							</div>
+						</li>
+					@endguest
+				</ul>
+				{{-- <ul class="navbar-nav flag">
 					<li class="nav-item">
 						<a class="nav-link" href="https://www.posindonesia.co.id/id">    
 							<img class="flag " src="https://www.posindonesia.co.id/img/id_flag.jpg" alt="ID Lang">
@@ -153,7 +153,7 @@
 							<img class="flag  flag-disabled " src="https://www.posindonesia.co.id/img/en_flag.jpg" alt="EN Lang">
 						</a>
 					</li>
-				</ul>
+				</ul> --}}
 			</div>
 		</nav>
 		<div class="row dropdown-menu-big" id="lokasi-pelatihan-content" style="display:none;">
@@ -163,7 +163,7 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-				<a href="">
+				<a href="{{ url('/upt') }}">
 					<h5>Unit Pelaksana Teknis</h5>
 				</a>
 			</div>
@@ -197,7 +197,7 @@
 		</div>
 		<div class="row dropdown-menu-big" id="aktivitas-content" style="display:none;">
 			<div class="col-md-12">
-				<a href="">
+				<a href="{{ url('/news') }}">
 					<h5>Berita</h5>
 				</a>
 			</div>
@@ -218,14 +218,14 @@
 					<div class="col-md-3">
 						<h5>Tentang Pos</h5>
 						<p>
-							<a href="/id/about-us">Tentang Kami</a>    
+							<a href="/#">Tentang Kami</a>    
 						</p>
 						<br>
 						<h5>
-							<a href="/id/complaint">Kontak Pos</a>
+							<a href="/#">Kontak Pos</a>
 						</h5>
 						<p>
-							<a href="/id/complaint">Permintaan Informasi</a>   
+							<a href="/#">Permintaan Informasi</a>   
 						</p>
 						{{-- <p>
 							<a href="/id/complaint">Keluhan Pengiriman Pos</a>
@@ -246,10 +246,7 @@
 					<div class="col-md-3">
 					<h5>Berita</h5>
 						<p>
-							<a href="/id/news">Kumpulan Berita</a>
-						</p>
-						<p>
-							<a href="https://www.posindonesia.co.id/id/content/41">Unduh</a>
+							<a href="/news">Kumpulan Berita</a>
 						</p>
 					</div>
 					{{-- <div class="col-md-3">

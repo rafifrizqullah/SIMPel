@@ -25,9 +25,11 @@ Auth::routes();
 
 Route::get('/', 'PagesController@index');
 Route::get('/regional', 'PagesController@regional');
+Route::get('/upt', 'PagesController@upt');
+Route::get('/news', 'PagesController@news');
 Route::get('/about', 'PagesController@about');
 
-Route::get('submission', 'SubmissionController@index');
-Route::get('submission/getdirektorat/{id}', 'SubmissionController@getDivisi');
-Route::get('submission/getdivisi/{id}', 'SubmissionController@getBagian');
-Route::post('submission/store', 'SubmissionController@store');
+Route::get('/submission', 'TrainingController@create');
+Route::get('/training/getdirektorat/{id}', 'TrainingController@getDivisi');
+Route::get('/training/getdivisi/{id}', 'TrainingController@getBagian');
+Route::post('/training', 'TrainingController@store');

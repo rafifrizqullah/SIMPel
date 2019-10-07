@@ -25,6 +25,26 @@ class PagesController extends Controller
     {
         return view('pages.regional');
     }
+    
+    /**
+     * Show the application homepage.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function upt()
+    {
+        return view('pages.upt');
+    }
+
+    /**
+     * Show the application homepage.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function news()
+    {
+        return view('pages.news');
+    }
 
     /**
      * Show the application homepage.

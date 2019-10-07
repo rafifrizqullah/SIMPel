@@ -5,7 +5,7 @@
 @section('content')
 	<div class="container submission-form">
 		<div class="row">
-			<div class="col-md-10">
+			<div class="col-md-12">
         
         <h1 class="mt-3">Pengajuan Pelatihan</h1>
         <br>
@@ -20,11 +20,11 @@
           </div>
         @endif
 
-        <form action="submission/store" method="POST" enctype="multipart/form-data">
+        <form action="/training" method="POST" enctype="multipart/form-data">
           {{ csrf_field() }}
           <div class="form-group row">
 						<label for="direktorat" class="col-sm-2 col-form-label">Direktorat</label>
-            <div class="col-5">
+            <div class="col-sm-5">
               <select class="form-control" name="direktorat" id="direktorat">
                 
                 <option>-- pilih direktorat --</option>
@@ -37,7 +37,7 @@
 					</div>
 					<div class="form-group row">
 						<label for="divisi" class="col-sm-2 col-form-label">Divisi</label>
-            <div class="col-5">
+            <div class="col-sm-5">
               <select class="form-control" name="divisi" id="divisi">
                 
                 <option>-- pilih divisi --</option>
@@ -47,7 +47,7 @@
 					</div>
 					<div class="form-group row">
 						<label for="bagian" class="col-sm-2 col-form-label">Bagian</label>
-            <div class="col-5">
+            <div class="col-sm-5">
               <select class="form-control" name="bagian" id="bagian">
                 
                 <option>-- pilih bagian --</option>
@@ -61,14 +61,14 @@
           
           <div class="form-group row">
             <label for="uraianTugas" class="col-sm-2 col-form-label">Uraian Tugas</label>
-            <div class="col-9">
-              <textarea class="form-control" name="uraianTugas" id="uraianTugas" rows="3"></textarea>
+            <div class="col-sm-9">
+              <textarea class="form-control" name="uraianTugas" id="uraianTugas" rows="3" value="{{ old('uraianTugas') }}"></textarea>
             </div>
 					</div>
 					<div class="form-group row">
             <label for="kompetensi" class="col-sm-2 col-form-label">Kompetensi yang dibutuhkan</label>
-            <div class="col-9">
-              <textarea class="form-control" name="kompetensi" id="kompetensi" rows="3"></textarea>
+            <div class="col-sm-9">
+              <textarea class="form-control" name="kompetensi" id="kompetensi" rows="3" value="{{ old('kompetensi') }}"></textarea>
             </div>
           </div>
           
@@ -76,44 +76,44 @@
           
           <div class="form-group row">
             <label for="temaPelatihan" class="col-sm-2 col-form-label">Tema Pelatihan yang diusulkan</label>
-            <div class="col-9">
-              <textarea class="form-control" name="temaPelatihan" id="temaPelatihan" rows="3"></textarea>
+            <div class="col-sm-9">
+              <textarea class="form-control" name="temaPelatihan" id="temaPelatihan" rows="3" value="{{ old('temaPelatihan') }}"></textarea>
             </div>
 					</div>
 					<div class="form-group row">
             <label for="sasaran" class="col-sm-2 col-form-label">Sasaran yang ingin dicapai</label>
-            <div class="col-9">
-              <textarea class="form-control" name="sasaran" id="sasaran" rows="3"></textarea>
+            <div class="col-sm-9">
+              <textarea class="form-control" name="sasaran" id="sasaran" rows="3" value="{{ old('sasaran') }}"></textarea>
             </div>
 					</div>
 					<div class="form-group row">
             <label for="targetPeserta" class="col-sm-2 col-form-label">Target Peserta</label>
-            <div class="col-9">
-              <textarea class="form-control" name="targetPeserta" id="targetPeserta" rows="3"></textarea>
+            <div class="col-sm-9">
+              <textarea class="form-control" name="targetPeserta" id="targetPeserta" rows="3" value="{{ old('targetPeserta') }}"></textarea>
             </div>
 					</div>
-					<div class="form-group row">
+          <div class="form-group row">
             <label for="tempatPeyelenggaraan" class="col-sm-2 col-form-label">Tempat Penyelenggaraan</label>
-            <div class="col-9">
-              <textarea class="form-control" name="tempatPenyelenggaraan" id="tempatPenyelenggaraan" rows="3"></textarea>
+            <div class="col-sm-5">
+              <input class="form-control" name="tempatPenyelenggaraan" id="tempatPenyelenggaraan" rows="3" value="{{ old('tempatPenyelenggaraan') }}">
             </div>
           </div>
           <div class="form-group row date" data-provide="datepicker">
             <label for="tanggalPenyelenggaraan" class="col-sm-2 col-form-label">Tanggal Penyelenggaraan</label>
-            <div class="col-5">
-              <input type="date" class="form-control" name="tanggalPenyelenggaraan" id="tanggalPenyelenggaraan">
+            <div class="col-sm-3">
+              <input type="date" class="form-control" name="tanggalPenyelenggaraan" id="tanggalPenyelenggaraan" value="{{ old('tanggalPenyelenggaraan') }}">
             </div>
           </div>
           <div class="form-group row">
             <label for="jumlahPeserta" class="col-sm-2 col-form-label">Jumlah Peserta</label>
-            <div class="col-5">
-              <input class="form-control" name="jumlahPeserta" id="jumlahPeserta" rows="3" value="">
+            <div class="col-sm-3">
+              <input class="form-control" name="jumlahPeserta" id="jumlahPeserta" rows="3" value="{{ old('jumlahPeserta') }}">
             </div>
           </div>
           <div class="form-group row">
             <label for="durasi" class="col-sm-2 col-form-label">Durasi (Jam)</label>
-            <div class="col-5">
-              <input class="form-control" id="durasi" rows="3" value="">
+            <div class="col-sm-3">
+              <input class="form-control" name="durasi" id="durasi" rows="3" value="{{ old('durasi') }}">
             </div>
           </div>
           <hr><br>
@@ -122,47 +122,48 @@
           
           <div class="form-group row">
             <label for="uangSaku" class="col-sm-2 col-form-label">Uang Saku</label>
-            <div class="col-4">
-              <input type="text" class="form-control" name="uangSaku" id="uangSaku" rows="3" readonly>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" name="uangSaku" id="uangSaku" rows="3" value="{{ old('uangSaku') }}" readonly>
             </div>
           </div>
           <div class="form-group row">
             <label for="uangFasilitator" class="col-sm-2 col-form-label">Uang Fasilitator</label>
-            <div class="col-4">
-              <input type="text" class="form-control" id="uangFasilitator" rows="3" value="" readonly>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" name="uangFasilitator" id="uangFasilitator" rows="3" value="{{ old('uangFasilitator') }}" readonly>
             </div>
           </div>
           <div class="form-group row">
             <label for="narasumber" class="col-sm-2 col-form-label">Narasumber Eksternal</label>
-            <div class="col-4">
-              <input class="form-control" name="narasumber" id="narasumber" rows="3" value="">
+            <div class="col-sm-4">
+              <input class="form-control" name="narasumber" id="narasumber" rows="3" value="{{ old('narasumber') }}">
             </div>
           </div>
           <div class="form-group row">
             <label for="konsumsi" class="col-sm-2 col-form-label">Konsumsi</label>
-            <div class="col-4">
-              <input class="form-control" name="konsumsi" id="konsumsi" rows="3" value="">
+            <div class="col-sm-4">
+              <input class="form-control" name="konsumsi" id="konsumsi" rows="3" value="{{ old('konsumsi') }}">
             </div>
           </div>
           <div class="form-group row">
             <label for="akomodasi" class="col-sm-2 col-form-label">Akomodasi</label>
-            <div class="col-4">
-              <input class="form-control" name="akomodasi" id="akomodasi" rows="3" value="">
+            <div class="col-sm-4">
+              <input class="form-control" name="akomodasi" id="akomodasi" rows="3" value="{{ old('akomodasi') }}">
             </div>
           </div>
           <div class="form-group row">
-            <label for="jumlah" class="col-sm-2 col-form-label">Jumlah</label>
-            <div class="col-4">
-              <input class="form-control" id="jumlah" rows="3" value="" readonly>
+            <label for="jumlah" class="col-sm-2 col-form-label">Total Biaya</label>
+            <div class="col-sm-4">
+              <input class="form-control" name="jumlah" id="jumlah" rows="3" value="{{ old('jumlah') }}" readonly>
             </div>
           </div>
+          <hr><br>
           <div class="form-group row">
             <label for="fileProposal" class="col-sm-2 col-form-label">File Proposal</label>
             <div class="col-sm-4">
-              <input type="file" class="form-control" name="fileProposal" id="fileProposal">
+              <input type="file" class="form-control" name="fileProposal" id="fileProposal" value="{{ old('fileProposal') }}">
             </div>
           </div>
-          <button type="submit" class="btn btn-success">Kirim</button>
+          <button type="submit" class="btn btn-success mt-3">Kirim</button>
 				</form>
 			</div>
 		</div>
@@ -178,7 +179,7 @@
         var idDirektorat = $(this).val();
         if (idDirektorat) {
           $.ajax({
-            url : '/submission/getdirektorat/' +idDirektorat,
+            url : '/training/getdirektorat/' +idDirektorat,
             type : "GET",
             dataType : "json",
             success:function(data)
@@ -206,7 +207,7 @@
         var idDivisi = $(this).val();
         if (idDivisi) {
           $.ajax({
-            url : '/submission/getdivisi/' +idDivisi,
+            url : '/training/getdivisi/' +idDivisi,
             type : "GET",
             dataType : "json",
             success:function(data)

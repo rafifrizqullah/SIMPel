@@ -24,7 +24,11 @@
   <div class="row jumbotron jumbotron-fluid bg-jumbotron">
     <div class="overlay"></div>
     <div class="container">
-      <h1 class="display-5">Pelatihan yang akan datang:</h1>
+      <div class="hh">
+        <h1 class="display-1" style="margin-bottom: 0px;">SIMPel</h1>
+        <p>(Sistem Informasi Pelatihan)</p>
+      </div>
+      <h4 class="display-5">Pelatihan yang akan datang:</h1>
       <div class="row">
         <div class="col-md-12">
           <h5>TBA~</h5>
