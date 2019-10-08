@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Pos Indonesia - Pengajuan Pelatihan')
+@section('title', 'SIMPel - Pengajuan Pelatihan')
 		
 @section('content')
 	<div class="container submission-form">
