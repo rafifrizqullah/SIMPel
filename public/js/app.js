@@ -49360,51 +49360,6 @@ var app = new Vue({
   el: '#app'
 });
 
-$(document).ready(function () {
-  
-  // lokasi pelatihan menu
-  $('#lokasi-pelatihan').hover(function () {
-    $("#lokasi-pelatihan-content").show();
-  });
-  $('#lokasi-pelatihan-content').mouseover(function () {
-    $("#lokasi-pelatihan-content").show();
-  });
-  $('#beranda, #informasi-pelatihan, .navbar-brand').hover(function () {
-    $("#lokasi-pelatihan-content").hide();
-  });
-  $('#lokasi-pelatihan-content').mouseout(function () {
-    $("#lokasi-pelatihan-content").hide();
-  }); 
-  
-  // informasi pelatihan menu
-  $('#informasi-pelatihan').hover(function () {
-    $("#informasi-pelatihan-content").show();
-  });
-  $('#informasi-pelatihan-content').mouseover(function () {
-    $("#informasi-pelatihan-content").show();
-  });
-  $('#lokasi-pelatihan, #aktivitas, .navbar-brand').hover(function () {
-    $("#informasi-pelatihan-content").hide();
-  });
-  $('#informasi-pelatihan-content').mouseout(function () {
-    $("#informasi-pelatihan-content").hide();
-  }); 
-  
-  // aktivitas menu
-  $('#aktivitas').hover(function () {
-    $("#aktivitas-content").show();
-  });
-  $('#aktivitas-content').mouseover(function () {
-    $("#aktivitas-content").show();
-  });
-  $('#informasi-pelatihan, #pengajuan-pelatihan, .navbar-brand').hover(function () {
-    $("#aktivitas-content").hide();
-  });
-  $('#aktivitas-content').mouseout(function () {
-    $("#aktivitas-content").hide();
-  }); 
-});
-
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -49545,15 +49500,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/custom.scss":
+/*!************************************!*\
+  !*** ./resources/sass/custom.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!******************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/custom.scss ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\sippos\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\sippos\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\SIMPel\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\xampp\htdocs\SIMPel\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\SIMPel\resources\sass\custom.scss */"./resources/sass/custom.scss");
 
 
 /***/ })

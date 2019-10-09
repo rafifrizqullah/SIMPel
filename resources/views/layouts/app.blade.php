@@ -18,6 +18,7 @@
 
 	<!-- Styles -->
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
 	<div class="container-fluid" id="app">
@@ -286,6 +287,7 @@
 	
 	<!-- Scripts -->
 	<script src="{{ asset('js/app.js') }}"></script>
+	<script src="{{ asset('js/custom.js') }}"></script>
 
 	@yield('scripts')
 
