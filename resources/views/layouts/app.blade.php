@@ -176,7 +176,7 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-				<a href="">
+				<a href="{{ url('/jadwal') }}">
 					<h5>Jadwal Pelatihan</h5>
 				</a>
 			</div>
