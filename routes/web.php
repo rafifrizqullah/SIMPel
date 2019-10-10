@@ -28,6 +28,7 @@ Route::get('/regional', 'PagesController@regional');
 Route::get('/upt', 'PagesController@upt');
 Route::get('/news', 'PagesController@news');
 Route::get('/about', 'PagesController@about');
+Route::get('/jadwal', 'PagesController@jadwal');
 
 Route::get('/submission', 'TrainingController@create');
 Route::get('/training/getdirektorat/{id}', 'TrainingController@getDivisi');
