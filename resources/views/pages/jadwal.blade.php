@@ -2,11 +2,9 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center about">
+    <div class="row justify-content-center">
         <div class="text-center container mt-3">
-            <h1>
-                Jadwal Pelatihan
-            </h1>
+            <h1>Jadwal Pelatihan</h1>
         </div>
         <div class="input-group mt-5">
             <div class="input-group-btn search-panel">
@@ -34,9 +32,9 @@
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Pelatihan</th>
+              <th scope="col">Waktu</th>
+              <th scope="col">Tempat</th>
           </tr>
       </thead>
       <tbody>
@@ -51,11 +49,6 @@
           <td>Jacob</td>
           <td>Thornton</td>
           <td>@fat</td>
-      </tr>
-      <tr>
-          <th scope="row">3</th>
-          <td colspan="2">Larry the Bird</td>
-          <td>@twitter</td>
       </tr>
   </tbody>
 </table>

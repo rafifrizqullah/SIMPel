@@ -3,9 +3,9 @@
 @section('title', 'SIMPel - Pengajuan Pelatihan')
 		
 @section('content')
-	<div class="container submission-form">
-		<div class="row">
-			<div class="col-md-12">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8 mt-5">
         
         <h1 class="mt-3">Pengajuan Pelatihan</h1>
         <br>
