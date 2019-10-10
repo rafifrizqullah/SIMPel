@@ -46,6 +46,16 @@ class PagesController extends Controller
         return view('pages.news');
     }
 
+     /**
+     * Show the application homepage.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function jadwal()
+    {
+        return view('pages.jadwal');
+    }
+
     /**
      * Show the application homepage.
      *
