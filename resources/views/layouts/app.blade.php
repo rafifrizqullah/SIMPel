@@ -95,6 +95,9 @@
 					<li class="nav-item" id="aktivitas">
 						<a class="nav-link" href="javascript:void(0)">Aktivitas</a>
 					</li>
+					<li class="nav-item" id="tentang-kami">
+						<a class="nav-link" href="javascript:void(0)">Tentang Kami</a>
+					</li>
 					@can('propose training')
 						<li class="nav-item" id="pengajuan-pelatihan">
 							<a class="nav-link" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
