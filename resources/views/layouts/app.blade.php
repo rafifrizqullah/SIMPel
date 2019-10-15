@@ -94,9 +94,6 @@
 					</li>
 					<li class="nav-item" id="aktivitas">
 						<a class="nav-link" href="javascript:void(0)">Aktivitas</a>
-<<<<<<< HEAD
-					</li>					
-=======
 					</li>
 					<li class="nav-item" id="tentang-kami">
 						<a class="nav-link" href="javascript:void(0)">Tentang Kami</a>
@@ -106,7 +103,6 @@
 							<a class="nav-link" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
 						</li>
 					@endcan
->>>>>>> b527eb66573e1a8a65401b9936c789ac60463cf7
 					{{-- <li class="nav-item" id="tentang-pos">
 						<a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
 					</li> --}}
