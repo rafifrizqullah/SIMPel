@@ -168,6 +168,11 @@
 					<h5>Unit Pelaksana Teknis</h5>
 				</a>
 			</div>
+			<div class="col-md-12">
+				<a href="{{ url('/upt') }}">
+					<h5>Pusat</h5>
+				</a>
+			</div>
 		</div>
 		<div class="row dropdown-menu-big" id="informasi-pelatihan-content" style="display:none;">
 			<div class="col-md-12">
@@ -182,17 +187,12 @@
 			</div>
 			<div class="col-md-12">
 				<a href="">
-					<h5>Biaya Pelatihan</h5>
-				</a>
-			</div>
-			<div class="col-md-12">
-				<a href="">
-					<h5>Peserta</h5>
-				</a>
-			</div>
-			<div class="col-md-12">
-				<a href="">
 					<h5>Pelaporan</h5>
+				</a>
+			</div>
+			<div class="col-md-12">
+				<a href="">
+					<h5>Materi</h5>
 				</a>
 			</div>
 		</div>
@@ -204,7 +204,7 @@
 			</div>
 			<div class="col-md-12">
 				<a href="">
-					<h5>Galery</h5>
+					<h5>Galeri</h5>
 				</a>
 			</div>
 		</div>
