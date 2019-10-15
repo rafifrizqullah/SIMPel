@@ -54,6 +54,21 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="job_title" class="col-md-4 col-form-label text-md-right">{{ __('Jabatan') }}</label>
+
+                            <div class="col-md-6">
+                                <select class="form-control" name="job_title" id="job_title">
+                                    <option value="karyawan">Karyawan</option>
+                                    <option value="operator">Operator</option>
+                                    <option value="manajer">Manajer</option>
+                                    <option value="svp">SVP</option>
+                                    <option value="vp">VP</option>
+                                    <option value="admin">Admin</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
