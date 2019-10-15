@@ -94,7 +94,19 @@
 					</li>
 					<li class="nav-item" id="aktivitas">
 						<a class="nav-link" href="javascript:void(0)">Aktivitas</a>
+<<<<<<< HEAD
 					</li>					
+=======
+					</li>
+					<li class="nav-item" id="tentang-kami">
+						<a class="nav-link" href="javascript:void(0)">Tentang Kami</a>
+					</li>
+					@can('propose training')
+						<li class="nav-item" id="pengajuan-pelatihan">
+							<a class="nav-link" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
+						</li>
+					@endcan
+>>>>>>> b527eb66573e1a8a65401b9936c789ac60463cf7
 					{{-- <li class="nav-item" id="tentang-pos">
 						<a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
 					</li> --}}
@@ -171,6 +183,11 @@
 					<h5>Unit Pelaksana Teknis</h5>
 				</a>
 			</div>
+			<div class="col-md-12">
+				<a href="{{ url('/upt') }}">
+					<h5>Pusat</h5>
+				</a>
+			</div>
 		</div>
 		<div class="row dropdown-menu-big" id="informasi-pelatihan-content" style="display:none;">
 			<div class="col-md-12">
@@ -185,17 +202,12 @@
 			</div>
 			<div class="col-md-12">
 				<a href="">
-					<h5>Biaya Pelatihan</h5>
-				</a>
-			</div>
-			<div class="col-md-12">
-				<a href="">
-					<h5>Peserta</h5>
-				</a>
-			</div>
-			<div class="col-md-12">
-				<a href="">
 					<h5>Pelaporan</h5>
+				</a>
+			</div>
+			<div class="col-md-12">
+				<a href="">
+					<h5>Materi</h5>
 				</a>
 			</div>
 		</div>
@@ -207,7 +219,7 @@
 			</div>
 			<div class="col-md-12">
 				<a href="">
-					<h5>Galery</h5>
+					<h5>Galeri</h5>
 				</a>
 			</div>
 		</div>
