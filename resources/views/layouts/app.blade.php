@@ -94,12 +94,7 @@
 					</li>
 					<li class="nav-item" id="aktivitas">
 						<a class="nav-link" href="javascript:void(0)">Aktivitas</a>
-					</li>
-					@can('propose training')
-						<li class="nav-item" id="pengajuan-pelatihan">
-							<a class="nav-link" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
-						</li>
-					@endcan
+					</li>					
 					{{-- <li class="nav-item" id="tentang-pos">
 						<a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
 					</li> --}}
@@ -132,6 +127,12 @@
 	
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="">{{ __('Profil') }}</a>
+								
+								@can('propose training')
+								{{-- <li class="nav-item" id="pengajuan-pelatihan"> --}}
+									<a class="dropdown-item" id="pengajuan-pelatihan" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
+								{{-- </li> --}}
+								@endcan
 								<a class="dropdown-item" href="{{ route('logout') }}"
 									onclick="event.preventDefault();
 									document.getElementById('logout-form').submit();">
