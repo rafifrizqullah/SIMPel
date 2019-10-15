@@ -96,16 +96,13 @@
 						<a class="nav-link" href="javascript:void(0)">Aktivitas</a>
 					</li>
 					<li class="nav-item" id="tentang-kami">
-						<a class="nav-link" href="javascript:void(0)">Tentang Kami</a>
+						<a class="nav-link" href="/about">Tentang Kami</a>
 					</li>
 					@can('propose training')
 						<li class="nav-item" id="pengajuan-pelatihan">
 							<a class="nav-link" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
 						</li>
 					@endcan
-					{{-- <li class="nav-item" id="tentang-pos">
-						<a class="nav-link" href="{{ url('/about') }}">Tentang Pos</a>
-					</li> --}}
 				</ul>
 				
 				{{-- <a class="btn" id="btn-masuk" href="#">Masuk</a> --}}
@@ -221,22 +218,6 @@
 		<div class="row footer">
 			<div class="col-md-10">
 				<div class="row">
-					<div class="col-md-3">
-						<h5>Tentang Pos</h5>
-						<p>
-							<a href="/#">Tentang Kami</a>    
-						</p>
-						<br>
-						<h5>
-							<a href="/#">Kontak Pos</a>
-						</h5>
-						<p>
-							<a href="/#">Permintaan Informasi</a>   
-						</p>
-						{{-- <p>
-							<a href="/id/complaint">Keluhan Pengiriman Pos</a>
-						</p> --}}
-					</div>
 					{{-- <div class="col-md-3">
 						<h5>Produk Pos</h5>
 						<p>
@@ -250,10 +231,53 @@
 						</p>										
 					</div> --}}
 					<div class="col-md-3">
-					<h5>Berita</h5>
+					<h5><a href="/#">Kontak Pos</a></h5>
 						<p>
-							<a href="/news">Kumpulan Berita</a>
+							<a href="/#">Permintaan Informasi</a>   
 						</p>
+					<br>
+					<h5>Lokasi Kantor</h5>
+						<p>
+							<a href="/#">Regional</a>    
+						</p>
+						<p>
+							<a href="/#">UPT</a>
+						</p>
+						<p>
+							<a href="/#">Pusat</a>
+						</p>
+					</div>
+					<div class="col-md-3">
+					<h5>Informasi Pelatihan</h5>
+						<p>
+							<a href="/#">Jenis Pelatihan</a>    
+						</p>
+						<p>
+							<a href="/#">Jadwal Pelatihan</a>    
+						</p>
+						<p>
+							<a href="/#">Pelaporan</a>
+						</p>
+						<p>
+							<a href="/#">Materi Pelatihan</a>
+						</p>
+					</div>
+					<div class="col-md-3">
+						<h5>Tentang Kami</h5>
+							<p>
+								<a href="/#">Tentang Pos</a>    
+							</p>
+							<br>
+						<h5>Aktivitas</h5>
+							<p>
+								<a href="/news">Berita</a>
+							</p>
+							<p>
+								<a href="/news">Galeri</a>
+							</p>
+						{{-- <p>
+							<a href="/id/complaint">Keluhan Pengiriman Pos</a>
+						</p> --}}
 					</div>
 					{{-- <div class="col-md-3">
 						<h5>Tracking</h5>
