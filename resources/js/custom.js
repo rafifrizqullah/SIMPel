@@ -35,7 +35,7 @@ $(document).ready(function () {
   $('#aktivitas-content').mouseover(function () {
     $("#aktivitas-content").show();
   });
-  $('#informasi-pelatihan, #pengajuan-pelatihan, .navbar-brand').hover(function () {
+  $('#informasi-pelatihan, #pengajuan-pelatihan, #tentang-kami, .navbar-brand').hover(function () {
     $("#aktivitas-content").hide();
   });
   $('#aktivitas-content').mouseout(function () {
