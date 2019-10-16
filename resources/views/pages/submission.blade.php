@@ -5,7 +5,7 @@
 @section('content')
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-md-8 mt-5">
+			<div class="col-md-10 mt-5">
         
         <h1 class="mt-3">Pengajuan Pelatihan</h1>
         <br>
@@ -257,6 +257,7 @@
       var uang = $(this).val();
       if (uang) {
         console.log(uang);
+        $('#jumlah').val(total(uang));
         $('#narasumber').val(convertToRupiah(uang));
       }else {
         $('#narasumber').empty();
@@ -266,6 +267,7 @@
       var uang = $(this).val();
       if (uang) {
         console.log(uang);
+        $('#jumlah').val(total(uang));
         $('#konsumsi').val(convertToRupiah(uang));
       }else {
         $('#konsumsi').empty();
@@ -275,11 +277,22 @@
       var uang = $(this).val();
       if (uang) {
         console.log(uang);
+        $('#jumlah').val(total(uang));
         $('#akomodasi').val(convertToRupiah(uang));
       }else {
         $('#akomodasi').empty();
       }
     });
+
+    function total(uang){
+      var jumlah = $('#jumlah').val();
+      if (jumlah) {
+        var jumlah = convertToAngka(jumlah);
+      }
+      var total = +uang + +jumlah;
+      var total = convertToRupiah(total);
+      return total;
+    }
 
     /**
     * JavaScript Code Snippet
