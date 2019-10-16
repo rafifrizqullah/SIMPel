@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container home">
-	<div class="row  justify-content-center">
+	<div class="row justify-content-center">
 		<div class="col-12 text-center">
 			<h1 class="mt-5">Tentang Pos Indonesia</h1>
 		</div>
