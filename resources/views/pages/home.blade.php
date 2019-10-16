@@ -54,31 +54,37 @@
 	</div>
 
 	<div class="container">
-		<p style="font-weight:bold; color: orange;">Berita Terbaru</p>
+		<h4 style="font-weight:bold; color: orange;">Berita Terbaru</h4>
 		<div class="row">
 			<div class="col-sm-4">
-				<a href="#">
-					<img src="images/Training_beranda.jpg" alt="" style="width:300px; border-radius:8px; height:180px; border:5px solid orange;">
-				</a>
+				<div class="text-center">
+					<a href="#">
+						<img src="images/Training_beranda.jpg"  alt="Responsive image" style="width:300px; border-radius:8px; height:180px; border:3px solid orange;">
+					</a>
+				</div>
 				<h6 style="color:orange">10-10-2019</h6>
 				<p style="color:orange;font-weight:bold;">Pelatihan PT.POS Indonesia</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptatum doloribus ullam tempora veritatis laudantium at dolorum nihil labore consequuntur, eligendi esse quidem soluta dolorem maxime iste molestiae ipsum culpa!</p>
+				<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptatum doloribus ullam tempora veritatis laudantium at dolorum nihil labore consequuntur, eligendi esse quidem soluta dolorem maxime iste molestiae ipsum culpa!</p>
 			</div>
 			<div class="col-sm-4">
-				<a href="#">
-					<img src="images/Training_beranda.jpg" alt="" style="width:300px; border-radius:8px; height:180px; border:5px solid orange;">
-				</a>
+				<div class="text-center">
+					<a href="#">
+						<img src="images/Training_beranda.jpg"  alt="Responsive image" style="width:300px; border-radius:8px; height:180px; border:3px solid orange;">
+					</a>
+				</div>
 				<h6 style="color:orange">10-10-2019</h6>
 				<p style="color:orange;font-weight:bold;">Pelatihan PT.POS Indonesia</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae natus nobis recusandae? Delectus, earum culpa, laudantium placeat repellendus vitae animi cupiditate facilis nam voluptatem temporibus fugiat deserunt doloribus dolorum incidunt?</p>
+				<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae natus nobis recusandae? Delectus, earum culpa, laudantium placeat repellendus vitae animi cupiditate facilis nam voluptatem temporibus fugiat deserunt doloribus dolorum incidunt?</p>
 			</div>
 			<div class="col-sm-4">
-				<a href="#">
-					<img src="images/Training_beranda.jpg" alt="" style="width:300px; border-radius:8px; height:180px; border:5px solid orange;">
-				</a>
+				<div class="text-center">
+					<a href="#">
+						<img src="images/Training_beranda.jpg"  alt="Responsive image" style="width:300px; border-radius:8px; height:180px; border:3px solid orange;">
+					</a>
+				</div>
 				<h6 style="color:orange">10-10-2019</h6>
 				<p style="color:orange;font-weight:bold;">Pelatihan PT.POS Indonesia</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorum perspiciatis eos animi adipisci atque dolor, ratione fuga quae debitis omnis in assumenda placeat consequuntur, exercitationem id labore? Doloremque, deserunt.</p>
+				<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorum perspiciatis eos animi adipisci atque dolor, ratione fuga quae debitis omnis in assumenda placeat consequuntur, exercitationem id labore? Doloremque, deserunt.</p>
 			</div>
 		</div>
 	</div>
