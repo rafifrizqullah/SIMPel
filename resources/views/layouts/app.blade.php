@@ -132,8 +132,12 @@
 	
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="">{{ __('Profil') }}</a>
-								
-								@can('propose training')
+								@can('verify proposal')
+								{{-- <li class="nav-item" id="pengajuan-pelatihan"> --}}
+									<a class="dropdown-item" id="verify-pelatihan" href="{{ url('/submission') }}">Pelatihan Masuk</a>
+								{{-- </li> --}}
+								@endcan
+								@can('submit proposal')
 								{{-- <li class="nav-item" id="pengajuan-pelatihan"> --}}
 									<a class="dropdown-item" id="pengajuan-pelatihan" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
 								{{-- </li> --}}
