@@ -62,7 +62,7 @@
 			<div class="col-sm-4">
 				<div class="text-center">
 					<a href="#">
-						<img src="images/Training_beranda.jpg"  alt="" style="width:340px; height:200px; border-radius:8px;  border:3px solid orange;">
+						<img src="images/Training_beranda.jpg"  alt="" style="max-width:100%; border-radius:8px;  border:3px solid orange;">
 					</a>
 				</div>
 				<div class="mt-3">
@@ -76,7 +76,7 @@
 			<div class="col-sm-4">
 				<div class="text-center">
 					<a href="#">
-						<img src="images/Training_beranda.jpg"  alt="" style="width:340px; height:200px; border-radius:8px;  border:3px solid orange;">
+						<img src="images/Training_beranda.jpg"  alt="" style="max-width:100%; border-radius:8px;  border:3px solid orange;">
 					</a>
 				</div>
 				<div class="mt-3">
@@ -90,7 +90,7 @@
 			<div class="col-sm-4">
 				<div class="text-center">
 					<a href="#">
-						<img src="images/Training_beranda.jpg"  alt="" style="width:340px; height:200px; border-radius:8px;  border:3px solid orange;">
+						<img src="images/Training_beranda.jpg"  alt="" style="max-width:100%; border-radius:8px;  border:3px solid orange;">
 					</a>
 				</div>
 				<div class="mt-3">
