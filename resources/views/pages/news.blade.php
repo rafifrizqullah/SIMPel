@@ -14,7 +14,7 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<a href="#">
-					<img src="images/Training_beranda.jpg"  alt="" style="width:300px; border-radius:8px; height:180px; border:3px solid orange;">
+					<img src="images/Training_beranda.jpg"  alt="" style="max-width:100%; border-radius:8px; border:3px solid orange;">
 				</a>
 			</div>
 			<div class="col-sm-8">
@@ -29,7 +29,7 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<a href="#">
-					<img src="images/Training_beranda.jpg"  alt="" style="width:300px; border-radius:8px; height:180px; border:3px solid orange;">
+					<img src="images/Training_beranda.jpg"  alt="" style="max-width:100%; border-radius:8px; border:3px solid orange;">
 				</a>
 			</div>
 			<div class="col-sm-8">
@@ -44,7 +44,7 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<a href="#">
-					<img src="images/Training_beranda.jpg"  alt="" style="width:300px; border-radius:8px; height:180px; border:3px solid orange;">
+					<img src="images/Training_beranda.jpg"  alt="" style="max-width:100%; border-radius:8px; border:3px solid orange;">
 				</a>
 			</div>
 			<div class="col-sm-8">
