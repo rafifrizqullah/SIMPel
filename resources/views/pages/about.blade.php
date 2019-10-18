@@ -6,7 +6,7 @@
 		<div class="col-12 text-center">
 			<h1 class="mt-5">Tentang Pos Indonesia</h1>
 		</div>
-		<div class="col-8 text-center">
+		<div class="mt-3 col-8 text-center">
 			<p>
 				Mempunyai jaringan yang sangat luas hingga 4.800 kantor pos online. 
 				Jumlah titik layanan (Point of Sales) mencapai 58.700 titik dalam bentuk kantor pos, 

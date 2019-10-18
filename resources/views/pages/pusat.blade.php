@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Pos Indonesia - Lokasi Kantor UPT')
+@section('title', 'Pos Indonesia - Lokasi Kantor Pusat')
 
 @section('content')
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1 class="mt-5">Lokasi Kantor UPT</h1>
+				<h1 class="mt-5">Lokasi Kantor Pusat</h1>
 				<div class="mt-5">
 					<p style="font-size: 50px">Maaf, Halaman ini Dalam Perbaikan :)</p>
 				</div>

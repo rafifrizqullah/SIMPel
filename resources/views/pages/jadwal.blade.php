@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="text-center container mt-3">
+        <div class="text-center container mt-5">
             <h1>Jadwal Pelatihan</h1>
         </div>
         <div class="input-group mt-5">

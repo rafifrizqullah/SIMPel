@@ -1,13 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Pos Indonesia - Lokasi Regional')
+@section('title', 'Pos Indonesia - Lokasi Kantor Regional')
 
 @section('content')
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<h1 class="mt-3">Lokasi Regional Kantor</h1>
-					<div id="map"></div>
+			<div class="col-md-12 text-center">
+				<h1 class="mt-5">Lokasi Kantor Regional</h1>
+				<div class="mt-5">
+					<p style="font-size: 50px">Maaf, Halaman ini Dalam Perbaikan :)</p>
+				</div>
+				<div id="map"></div>
 			</div>
 		</div>
 	</div>

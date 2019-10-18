@@ -26,8 +26,11 @@ Auth::routes(['register' => false]);
 Route::get('/', 'PagesController@index');
 Route::get('/regional', 'PagesController@regional');
 Route::get('/upt', 'PagesController@upt');
+Route::get('/pusat', 'PagesController@pusat');
 Route::get('/news', 'PagesController@news');
+Route::get('/galeri', 'PagesController@galeri');
 Route::get('/about', 'PagesController@about');
+Route::get('/pelatihan', 'PagesController@pelatihan');
 Route::get('/jadwal', 'PagesController@jadwal');
 
 Route::get('/submission', 'TrainingController@create');

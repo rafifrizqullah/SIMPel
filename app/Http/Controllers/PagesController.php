@@ -42,9 +42,29 @@ class PagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function pusat()
+    {
+        return view('pages.pusat');
+    }
+
+    /**
+     * Show the application homepage.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function news()
     {
         return view('pages.news');
+    }
+
+    /**
+     * Show the application homepage.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function galeri()
+    {
+        return view('pages.galeri');
     }
 
      /**
@@ -55,6 +75,16 @@ class PagesController extends Controller
     public function jadwal()
     {
         return view('pages.jadwal');
+    }
+
+    /**
+     * Show the application homepage.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function pelatihan()
+    {
+        return view('pages.pelatihan');
     }
 
     /**

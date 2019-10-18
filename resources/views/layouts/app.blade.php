@@ -180,14 +180,14 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-				<a href="{{ url('/upt') }}">
+				<a href="{{ url('/pusat') }}">
 					<h5>Pusat</h5>
 				</a>
 			</div>
 		</div>
 		<div class="row dropdown-menu-big" id="informasi-pelatihan-content" style="display:none;">
 			<div class="col-md-12">
-				<a href="">
+				<a href="{{ url('/pelatihan') }}">
 					<h5>Jenis Pelatihan</h5>
 				</a>
 			</div>
@@ -214,7 +214,7 @@
 				</a>
 			</div>
 			<div class="col-md-12">
-				<a href="">
+				<a href="{{ url('/galeri') }}">
 					<h5>Galeri</h5>
 				</a>
 			</div>
