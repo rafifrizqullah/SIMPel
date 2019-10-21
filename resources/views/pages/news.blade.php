@@ -6,7 +6,7 @@
 <div class="container home">
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<h1 class="mt-5">Berita Terbaru Pos Indonesia</h1>
+			<h1 class="mt-5">Berita Pelatihan Terbaru</h1>
 		</div>
 	</div>
 
