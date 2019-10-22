@@ -130,7 +130,7 @@
 								{{ Auth::user()->name }} <span class="caret"></span>
 							</a>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="">{{ __('Profil') }}</a>
+								<a class="dropdown-item" href="{{ url('/profile') }}">{{ __('Profil') }}</a>
 								@can('verify proposal')
 								{{-- <li class="nav-item" id="pengajuan-pelatihan"> --}}
 									<a class="dropdown-item" id="verify-pelatihan" href="{{ url('/submission') }}">Pelatihan Masuk</a>
