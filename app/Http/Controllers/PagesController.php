@@ -105,5 +105,15 @@ class PagesController extends Controller
     public function about()
     {
         return view('pages.about');
+    }
+
+    /**
+     * Show the application profile.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function profile()
+    {
+        return view('pages.profile');
     } 
 }
