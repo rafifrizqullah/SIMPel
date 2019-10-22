@@ -28,6 +28,7 @@ Route::get('/regional', 'PagesController@regional');
 Route::get('/upt', 'PagesController@upt');
 Route::get('/pusat', 'PagesController@pusat');
 Route::get('/news', 'PagesController@news');
+Route::get('/newsSelect', 'PagesController@newsSelect');
 Route::get('/galeri', 'PagesController@galeri');
 Route::get('/about', 'PagesController@about');
 Route::get('/pelatihan', 'PagesController@pelatihan');

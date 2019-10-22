@@ -240,12 +240,12 @@
 						</p>										
 					</div> --}}
 					<div class="col-md-3">
-					<h5><a href="/#">Kontak Pos</a></h5>
+						<h5><a href="/#">Kontak Pos</a></h5>
 						<p>
 							<a href="/#">Permintaan Informasi</a>   
 						</p>
-					<br>
-					<h5>Lokasi Kantor</h5>
+						<br>
+						<h5>Lokasi Kantor</h5>
 						<p>
 							<a href="/#">Regional</a>    
 						</p>
@@ -257,7 +257,7 @@
 						</p>
 					</div>
 					<div class="col-md-3">
-					<h5>Informasi Pelatihan</h5>
+						<h5>Informasi Pelatihan</h5>
 						<p>
 							<a href="/#">Jenis Pelatihan</a>    
 						</p>
@@ -287,6 +287,17 @@
 						{{-- <p>
 							<a href="/id/complaint">Keluhan Pengiriman Pos</a>
 						</p> --}}
+					</div>
+					<div class="col-md-3">
+						<h5>Alamat Kami</h5>
+						<p>
+							Jl. Supratman No.88, Cihaur Geulis, Kec. Cibeunying Kaler, Kota Bandung, Jawa Barat 40122    
+						</p>
+						<br>
+						<h5>Jam Operasional</h5>
+						<p>
+							Senin-Jumat 08.00-17.00 WIB
+						</p>
 					</div>
 					{{-- <div class="col-md-3">
 						<h5>Tracking</h5>

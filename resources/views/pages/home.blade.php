@@ -70,13 +70,13 @@
 		<div class="row mt-3">
 			<div class="col-sm-4">
 				<div class="text-center">
-					<a href="#">
+					<a href="/newsSelect">
 						<img src="images/Training_beranda.jpg"  alt="" style="max-width:100%; border-radius:8px;  border:3px solid orange;">
 					</a>
 				</div>
 				<div class="mt-3">
 					<h6 style="color:orange">10-10-2019 - Bandung</h6>
-					<a href="#">
+					<a href="/newsSelect">
 						<p style="color:orange; font-weight:bold; font-size:16px">Pelatihan PT.POS Indonesia</p>
 					</a>
 					<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptatum doloribus ullam tempora veritatis laudantium at dolorum nihil labore consequuntur, eligendi esse quidem soluta dolorem maxime iste molestiae ipsum culpa!</p>
@@ -84,13 +84,13 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="text-center">
-					<a href="#">
+					<a href="/newsSelect">
 						<img src="images/Training_beranda.jpg"  alt="" style="max-width:100%; border-radius:8px;  border:3px solid orange;">
 					</a>
 				</div>
 				<div class="mt-3">
 					<h6 style="color:orange">10-10-2019 - Bandung</h6>
-					<a href="#">
+					<a href="/newsSelect">
 						<p style="color:orange; font-weight:bold; font-size:16px">Pelatihan PT.POS Indonesia</p>
 					</a>
 					<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptatum doloribus ullam tempora veritatis laudantium at dolorum nihil labore consequuntur, eligendi esse quidem soluta dolorem maxime iste molestiae ipsum culpa!</p>
@@ -98,13 +98,13 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="text-center">
-					<a href="#">
+					<a href="/newsSelect">
 						<img src="images/Training_beranda.jpg"  alt="" style="max-width:100%; border-radius:8px;  border:3px solid orange;">
 					</a>
 				</div>
 				<div class="mt-3">
 					<h6 style="color:orange">10-10-2019 - Bandung</h6>
-					<a href="#">
+					<a href="/newsSelect">
 						<p style="color:orange; font-weight:bold; font-size:16px">Pelatihan PT.POS Indonesia</p>
 					</a>
 					<p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptatum doloribus ullam tempora veritatis laudantium at dolorum nihil labore consequuntur, eligendi esse quidem soluta dolorem maxime iste molestiae ipsum culpa!</p>
@@ -170,9 +170,7 @@
 				</div>
 				<div class="mt-3">
 					<h6 style="color:orange">10-10-2019 - Bandung</h6>
-					<a href="#">
-						<p style="color:orange; font-weight:bold; font-size:16px">Pelatihan PT.POS Indonesia</p>
-					</a>
+					<p style="color:orange; font-weight:bold; font-size:16px">Pelatihan PT.POS Indonesia</p>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -181,9 +179,7 @@
 				</div>
 				<div class="mt-3">
 					<h6 style="color:orange">10-10-2019 - Bandung</h6>
-					<a href="#">
-						<p style="color:orange; font-weight:bold; font-size:16px">Pelatihan PT.POS Indonesia</p>
-					</a>
+					<p style="color:orange; font-weight:bold; font-size:16px">Pelatihan PT.POS Indonesia</p>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -192,20 +188,8 @@
 				</div>
 				<div class="mt-3">
 					<h6 style="color:orange">10-10-2019 - Bandung</h6>
-					<a href="#">
-						<p style="color:orange; font-weight:bold; font-size:16px">Pelatihan PT.POS Indonesia</p>
-					</a>
+					<p style="color:orange; font-weight:bold; font-size:16px">Pelatihan PT.POS Indonesia</p>
 				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-
-	<div class="container text-center">
-		<h3 style="font-weight:bold; color: orange;">Live Streaming</h3>
-		<div class="col-sm-7 mx-auto d-block">
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/CDGJcIQYLzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

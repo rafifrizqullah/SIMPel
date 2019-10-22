@@ -57,6 +57,16 @@ class PagesController extends Controller
         return view('pages.news');
     }
 
+     /**
+     * Show the application homepage.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function newsSelect()
+    {
+        return view('pages.newsSelect');
+    }
+
     /**
      * Show the application homepage.
      *
