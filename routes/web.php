@@ -32,6 +32,7 @@ Route::get('/galeri', 'PagesController@galeri');
 Route::get('/about', 'PagesController@about');
 Route::get('/pelatihan', 'PagesController@pelatihan');
 Route::get('/jadwal', 'PagesController@jadwal');
+Route::get('/profile', 'PagesController@profile');
 
 Route::get('/submission', 'TrainingController@create');
 Route::get('/training/getdirektorat/{id}', 'TrainingController@getDivisi');
