@@ -144,7 +144,7 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\sippos\resources\js\custom.js */"./resources/js/custom.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\SIMPel\resources\js\custom.js */"./resources/js/custom.js");
 
 
 /***/ })
