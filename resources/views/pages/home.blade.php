@@ -22,7 +22,7 @@
 		</div>
 	</div> --}}
 
-	<div class="row jumbotron jumbotron-fluid bg-jumbotron">
+	<div class="jumbotron jumbotron-fluid bg-jumbotron">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="col-md-5 mx-auto d-block">
