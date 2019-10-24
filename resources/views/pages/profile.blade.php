@@ -3,15 +3,15 @@
 @section('content')
 <div class="container">
 	<div class="row justify-content-center">
-		<div class="col-sm-10">
+		<div class="col-md-12">
 			<h1 class="mt-5">Halo, {{ Auth::user()->name }}!</h1>
 		</div>
-		<div class="mt-3 col-sm-10">
+		<div class="mt-3 col-md-12">
 			<p>
 				Selamat datang di halaman dashboard anda. Pada halaman ini Anda dapat melihat seluruh informasi data diri dan statistik pelatihan Anda.
 			</p>
     </div>
-    <div class="col-sm-10">
+    <div class="col-md-12">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -28,21 +28,24 @@
           <div class="col-md-3">
             <div class="card mt-3">
               <div class="card-body text-center">
-                <p>Permohonan pelatihan</p>
+                <span class="dashboard-statistik-count">6</span>
+                <span>Permohonan pelatihan</span>
               </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="card mt-3">
               <div class="card-body text-center">
-                <p>Pelatihan yang telah diikuti</p>
+                <span class="dashboard-statistik-count">11</span>
+                <span>Pelatihan yang telah diikuti</span>
               </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="card mt-3">
               <div class="card-body text-center">
-                <p>Pelatihan yan gakan diikuti</p>
+                <span class="dashboard-statistik-count">6</span>
+                <span>Pelatihan yan gakan diikuti</span>
               </div>
             </div>
           </div>

@@ -1075,3 +1075,8 @@
   border-radius: 50px;
 }
 
+.dashboard-statistik-count {
+  font-size: 2.5em;
+  display: block;
+}
+
