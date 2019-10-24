@@ -9,10 +9,4 @@
     </p>
   </div>
 </div>
-<div class="container">
-  <div class="sidenav">
-    <a href="">Profile</a>
-    <a href="">Achievement</a>
-  </div>
-</div>
 @endsection
