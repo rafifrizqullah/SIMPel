@@ -1080,25 +1080,3 @@
   font-size: 2.5em;
   display: block;
 }
-
-.sidenav {
-  width: 130px;
-  position: relative;
-  z-index: 1;
-  top: 20px;
-  background: #eee;
-  overflow-x: hidden;
-  padding: 8px 0;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  // font-size: 25px;
-  color: #2196F3;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #064579;
-}
