@@ -21,7 +21,7 @@
 	<link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
-	<div class="" id="app">
+	<div id="app">
 		<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
 			<a class="navbar-brand" href="{{ url('/') }}">
 				<img src="{{ asset('/images/logo-pos.png') }}" alt="Logo Pos Indonesia">
@@ -47,18 +47,16 @@
 					</li>
 					<li class="nav-item dropdown" id="informasi-pelatihan">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informasi Pelatihan
-						{{-- <i class="fa fa-angle-down"></i> --}}
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="{{ url('/') }}">Jenis Pelatihan</a>
-							<a class="dropdown-item" href="{{ url('/') }}">Jadwal Pelatihan</a>
+							<a class="dropdown-item" href="{{ url('/jadwal') }}">Jadwal Pelatihan</a>
 							<a class="dropdown-item" href="{{ url('/') }}">Pelaporan</a>
 							<a class="dropdown-item" href="{{ url('/') }}">Materi</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown" id="lokasi-pelatihan">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aktivitas
-						{{-- <i class="fa fa-angle-down"></i> --}}
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="{{ url('/news') }}">Berita</a>
@@ -75,7 +73,6 @@
 					@endcan
 				</ul>
 				
-				{{-- <a class="btn" id="btn-masuk" href="#">Masuk</a> --}}
 				<!-- Right Side Of Navbar -->
 				<ul class="navbar-nav ml-auto mr-4">
 					<form class="form-inline my-2 my-lg-0 search-form" method="GET" action="#">
