@@ -1030,11 +1030,8 @@
   margin-bottom: 62px;
 }
 
-.jumbotron {
-  min-height: 500px;
-}
-
 .bg-jumbotron {
+  min-height: 500px;
   background-image: url(/images/A.jpg);
   background-size: cover;
   color: white;
@@ -1078,5 +1075,26 @@
 .dashboard-statistik-count {
   font-size: 2.5em;
   display: block;
+}
+
+.sidenav {
+  width: 130px;
+  position: relative;
+  z-index: 1;
+  top: 20px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
 }
 
