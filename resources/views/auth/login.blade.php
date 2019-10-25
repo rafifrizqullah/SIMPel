@@ -18,12 +18,13 @@
 
 	<!-- Styles -->
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="login-app">
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom navbar-login">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="{{ asset('/images/logo-pos.svg') }}" alt="Logo Pos Indonesia">
+                <img src="{{ asset('/images/logo-pos.png') }}" alt="Logo Pos Indonesia">
             </a>
         </nav>
         <div class="container login">
