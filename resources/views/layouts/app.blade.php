@@ -51,7 +51,7 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="{{ url('/jenispelatihan') }}">Jenis Pelatihan</a>
 							<a class="dropdown-item" href="{{ url('/jadwal') }}">Jadwal Pelatihan</a>
-							<a class="dropdown-item" href="{{ url('/') }}">Pelaporan</a>
+							<a class="dropdown-item" href="{{ url('/pelaporan') }}">Pelaporan</a>
 							<a class="dropdown-item" href="{{ url('/') }}">Materi</a>
 						</div>
 					</li>
