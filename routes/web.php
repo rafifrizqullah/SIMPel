@@ -19,7 +19,7 @@
 //     return view('pages.home');
 // });
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
