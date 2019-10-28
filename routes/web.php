@@ -36,6 +36,7 @@ Route::get('/jadwal', 'PagesController@jadwal');
 Route::get('/profile', 'PagesController@profile');
 Route::get('/jenispelatihan', 'PagesController@jenispelatihan');
 Route::get('/pelaporan', 'PagesController@pelaporan');
+Route::get('/terkirim', 'PagesController@terkirim');
 
 Route::get('/submission', 'TrainingController@create');
 Route::get('/training/getdirektorat/{id}', 'TrainingController@getDivisi');

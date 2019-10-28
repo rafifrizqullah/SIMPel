@@ -93,9 +93,15 @@ class PagesController extends Controller
     {
         return view('pages.jenispelatihan');
     }
+
     public function pelaporan()
     {
         return view('pages.pelaporan');
+    }
+
+    public function terkirim()
+    {
+        return view('pages.terkirim');
     }
 
 
