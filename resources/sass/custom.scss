@@ -1034,11 +1034,8 @@
   margin-bottom: 62px;
 }
 
-.jumbotron {
-  min-height: 500px;
-}
-
 .bg-jumbotron {
+  min-height: 500px;
   background-image: url(/images/A.jpg);
   background-size: cover;
   color: white;
@@ -1064,4 +1061,22 @@
 
 .about {
   margin-top: 80px;
+}
+
+.button-back{
+  background-color: white;
+  border: 1px solid #9e9e9e;;
+  color: #ff6f00;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50px;
+}
+
+.dashboard-statistik-count {
+  font-size: 2.5em;
+  display: block;
 }

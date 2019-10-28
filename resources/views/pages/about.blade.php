@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
+@section('title', 'SIMPel - Tentang')
+
 @section('content')
 <div class="container home">
 	<div class="row justify-content-center">
-		<div class="col-12 text-center">
+		<div class="col-md-12 text-center">
 			<h1 class="mt-5">Tentang Pos Indonesia</h1>
 		</div>
-		<div class="mt-3 col-8 text-center">
+		<div class="mt-3 col-md-8 text-center">
 			<p>
 				Mempunyai jaringan yang sangat luas hingga 4.800 kantor pos online. 
 				Jumlah titik layanan (Point of Sales) mencapai 58.700 titik dalam bentuk kantor pos, 
@@ -23,21 +25,21 @@
 		</div>
 	</div>
 	<div class="row justify-content-center">
-		<div class="col-12 text-center">
+		<div class="col-md-12 text-center">
 			<h1 class="mt-5">Visi Misi Pos Indonesia</h1>
 		</div>
-		<div class="col-12 text-center">
+		<div class="col-md-12 text-center">
 			<h3 class="mt-3">Visi</h3>
 		</div>
-		<div>
+		<div class="col-md-6">
 			<p>
 				Menjadi pilihan utama layanan logistik dan jasa keuangan.
 			</p>
 		</div>
-		<div class="col-12 text-center">
+		<div class="col-md-12 text-center">
 			<h3 class="mt-3">Misi</h3>
 		</div>
-		<div class="col-6">
+		<div class="col-md-6">
 			<ul>
 				<li>Memberikan solusi layanan logistik e-commerce yang kompetitif.</li>
 				<li>Menjalankan fungsi designated operator secara profesional dan kompetitif.</li>

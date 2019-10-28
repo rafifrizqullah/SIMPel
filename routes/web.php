@@ -19,7 +19,7 @@
 //     return view('pages.home');
 // });
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
@@ -28,10 +28,12 @@ Route::get('/regional', 'PagesController@regional');
 Route::get('/upt', 'PagesController@upt');
 Route::get('/pusat', 'PagesController@pusat');
 Route::get('/news', 'PagesController@news');
+Route::get('/newsSelect', 'PagesController@newsSelect');
 Route::get('/galeri', 'PagesController@galeri');
 Route::get('/about', 'PagesController@about');
 Route::get('/pelatihan', 'PagesController@pelatihan');
 Route::get('/jadwal', 'PagesController@jadwal');
+Route::get('/profile', 'PagesController@profile');
 
 Route::get('/submission', 'TrainingController@create');
 Route::get('/training/getdirektorat/{id}', 'TrainingController@getDivisi');
