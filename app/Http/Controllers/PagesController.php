@@ -91,8 +91,6 @@ class PagesController extends Controller
 
     public function jenispelatihan()
     {
-    
-
         return view('pages.jenispelatihan');
     }
 
