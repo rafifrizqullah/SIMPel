@@ -49,7 +49,7 @@
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informasi Pelatihan
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="{{ url('/') }}">Jenis Pelatihan</a>
+							<a class="dropdown-item" href="{{ url('/jenispelatihan') }}">Jenis Pelatihan</a>
 							<a class="dropdown-item" href="{{ url('/jadwal') }}">Jadwal Pelatihan</a>
 							<a class="dropdown-item" href="{{ url('/') }}">Pelaporan</a>
 							<a class="dropdown-item" href="{{ url('/') }}">Materi</a>

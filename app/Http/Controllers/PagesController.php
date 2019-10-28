@@ -89,6 +89,14 @@ class PagesController extends Controller
         return view('pages.pusat');
     }
 
+    public function jenispelatihan()
+    {
+    
+
+        return view('pages.jenispelatihan');
+    }
+
+
     /**
      * Show the application homepage.
      *
