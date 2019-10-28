@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<h1 class="mt-5">Lokasi Kantor UPT</h1>
-				<div style="width: 1000px; height: 400px;">
+				<div style="width: 1100px; height: 400px;">
 					{!! Mapper::render() !!}
 				</div>
 			</div>
