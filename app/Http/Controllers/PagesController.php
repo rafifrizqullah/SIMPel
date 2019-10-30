@@ -104,6 +104,10 @@ class PagesController extends Controller
         return view('pages.terkirim');
     }
 
+    public function materi()
+    {
+        return view('pages.materi');
+    }
 
     /**
      * Show the application homepage.

@@ -35,8 +35,13 @@ Route::get('/pelatihan', 'PagesController@pelatihan');
 Route::get('/jadwal', 'PagesController@jadwal');
 Route::get('/profile', 'PagesController@profile');
 Route::get('/jenispelatihan', 'PagesController@jenispelatihan');
-Route::get('/pelaporan', 'PagesController@pelaporan');
 Route::get('/terkirim', 'PagesController@terkirim');
+Route::get('/materi', 'PagesController@materi');
+
+Route::get('/pelaporan', 'PelaporanController@create');
+Route::get('/pelaporan/getdirektorat/{id}', 'PelaporanController@getDivisi');
+Route::get('/pelaporan/getdivisi/{id}', 'PelaporanController@getBagian');
+Route::post('/pelaporan', 'PelaporanController@store');
 
 Route::get('/submission', 'TrainingController@create');
 Route::get('/training/getdirektorat/{id}', 'TrainingController@getDivisi');

@@ -52,7 +52,7 @@
 							<a class="dropdown-item" href="{{ url('/jenispelatihan') }}">Jenis Pelatihan</a>
 							<a class="dropdown-item" href="{{ url('/jadwal') }}">Jadwal Pelatihan</a>
 							<a class="dropdown-item" href="{{ url('/pelaporan') }}">Pelaporan</a>
-							<a class="dropdown-item" href="{{ url('/') }}">Materi</a>
+							<a class="dropdown-item" href="{{ url('/materi') }}">Materi</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown" id="lokasi-pelatihan">

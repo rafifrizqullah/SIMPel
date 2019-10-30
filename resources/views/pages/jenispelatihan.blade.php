@@ -14,11 +14,7 @@
 					<img src="images/pelayananpelanggan.png" alt="" style="max-width:100%; border-radius:10px;  border:3px solid orange;">
 				</a>
 			</div>
-			<div class="col-md-4 text-center text-center pembungkus mb-2">
-				<a href="#">
-					<img src="images/kepemimpinan.png" alt="" style="max-width:100%; border-radius:10px;  border:3px solid orange;">
-				</a>
-			</div>
+			
 			<div class="col-md-4 text-center text-center pembungkus mb-2">
 				<a href="#">
 					<img src="images/kepemimpinan.png" alt="" style="max-width:100%; border-radius:10px;  border:3px solid orange;">
