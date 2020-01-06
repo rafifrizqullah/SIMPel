@@ -16,6 +16,7 @@ class AddUsernameToUsers extends Migration
         Schema::table('users', function (Blueprint $table) {
             //
             $table->string('username')->after('name');
+            $table->string('job_title')->after('email');
         });
     }
 

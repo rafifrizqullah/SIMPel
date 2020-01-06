@@ -21,8 +21,6 @@
 
 Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/', 'PagesController@index');
 Route::get('/regional', 'PagesController@regional');
 Route::get('/upt', 'PagesController@upt');
