@@ -21,8 +21,7 @@ class TrainingController extends Controller
      */
     public function index()
     {
-        // $direktorat = Direktorat::pluck("nama","id");
-        // return view('pages.submission', compact('direktorat'));
+
     }
 
     /**
@@ -45,30 +44,6 @@ class TrainingController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // $validatedData = $request->validate([
-        //     'direktorat' => 'required',
-        //     'divisi' => 'required',
-        //     'bagian' => 'required',
-        //     'uraianTugas' => 'required',
-        //     'kompetensi' => 'required',
-        //     'temaPelatihan' => 'required',
-        //     'sasaran' => 'required',
-        //     'targetPeserta' => 'required',
-        //     'tempatPenyelenggaraan' => 'required',
-        //     'tanggalPenyelenggaraan' => 'required',
-        //     'jumlahPeserta' => 'required|numeric',
-        //     'durasi' => 'required|numeric',
-        //     'uangSaku' => 'required',
-        //     'uangFasilitator' => 'required',
-        //     'narasumber' => 'required',
-        //     'konsumsi' => 'required',
-        //     'akomodasi' => 'required',
-        //     // 'jumlah' => 'required',
-        //     'fileProposal' => 'required',
-        // ]);
-
-        // Training::create($request->all());
 
         Training::create([
             'direktorat' => $request->direktorat,
@@ -88,7 +63,7 @@ class TrainingController extends Controller
             'narasumber' => $request->narasumber,
             'konsumsi' => $request->konsumsi,
             'akomodasi' => $request->akomodasi,
-            // 'jumlah' => $request->jumlah,
+            'jumlah' => $request->jumlah,
             'file_proposal' => $request->fileProposal,
         ]);
 

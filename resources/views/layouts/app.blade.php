@@ -66,7 +66,7 @@
 					<li class="nav-item" id="tentang-kami">
 						<a class="nav-link" href="/about">Tentang Kami</a>
 					</li>
-					@can('propose training')
+					@can('submit proposal')
 						<li class="nav-item" id="pengajuan-pelatihan">
 							<a class="nav-link" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
 						</li>
