@@ -66,11 +66,11 @@
 					<li class="nav-item" id="tentang-kami">
 						<a class="nav-link" href="/about">Tentang Kami</a>
 					</li>
-					@can('submit proposal')
+					{{-- @role('operator')
 						<li class="nav-item" id="pengajuan-pelatihan">
 							<a class="nav-link" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
 						</li>
-					@endcan
+					@endrole --}}
 				</ul>
 				
 				<!-- Right Side Of Navbar -->
@@ -98,12 +98,12 @@
 							</a>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="{{ url('/profile') }}">{{ __('Profil') }}</a>
-								@can('verify proposal')
+								@role('manajer')
 									<a class="dropdown-item" id="verify-pelatihan" href="{{ url('/submission') }}">Pelatihan Masuk</a>
-								@endcan
-								@can('submit proposal')
+								@endrole
+								@role('operator')
 									<a class="dropdown-item" id="pengajuan-pelatihan" href="{{ url('/submission') }}">Pengajuan Pelatihan</a>
-								@endcan
+								@endrole
 								<a class="dropdown-item" href="{{ route('logout') }}"
 									onclick="event.preventDefault();
 									document.getElementById('logout-form').submit();">
