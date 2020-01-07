@@ -11,7 +11,7 @@
         <div class="input-group mt-5">
             <div class="input-group-btn search-panel">
                 <a class="btn btn-default ">
-                    <span id="search_concept">Pencarian</span> <span class="caret"></span>
+                    <span id="search_concept"></span> <span class="caret"></span>
                 </a>
           </div>
           <input type="hidden" name="search_param" value="all" id="search_param" >         
@@ -26,7 +26,7 @@
           <thead>
             <tr class="text-center">
               <th scope="col" >Pelatihan</th>
-              <th scope="col">Waktu</th>
+              <th scope="col">Unduh Materi</th>
           </tr>
       </thead>
       <tbody>
