@@ -67,6 +67,10 @@ class TrainingController extends Controller
             'file_proposal' => $request->fileProposal,
         ]);
 
+        $file = $request->file('fileProposal');
+        $tujuan_upload = 'data_file';
+        $file->move($tujuan_upload,$file->getClientOriginalName());
+
         return redirect('/');
     }
 

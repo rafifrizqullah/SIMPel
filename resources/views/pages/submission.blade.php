@@ -123,13 +123,13 @@
           <div class="form-group row">
             <label for="uangSaku" class="col-sm-2 col-form-label">Uang Saku</label>
             <div class="col-sm-4">
-              <input type="text" class="form-control" name="uangSaku" id="uangSaku" rows="3" value="{{ old('uangSaku') }}" readonly>
+              <input type="text" class="form-control" name="uangSaku" id="uangSaku" rows="3" value="{{ old('uangSaku') }}">
             </div>
           </div>
           <div class="form-group row">
             <label for="uangFasilitator" class="col-sm-2 col-form-label">Uang Fasilitator</label>
             <div class="col-sm-4">
-              <input type="text" class="form-control" name="uangFasilitator" id="uangFasilitator" rows="3" value="{{ old('uangFasilitator') }}" readonly>
+              <input type="text" class="form-control" name="uangFasilitator" id="uangFasilitator" rows="3" value="{{ old('uangFasilitator') }}" >
             </div>
           </div>
           <div class="form-group row">
@@ -153,7 +153,7 @@
           <div class="form-group row">
             <label for="jumlah" class="col-sm-2 col-form-label">Total Biaya</label>
             <div class="col-sm-4">
-              <input class="form-control" name="jumlah" id="jumlah" rows="3" value="{{ old('jumlah') }}" readonly>
+              <input class="form-control" name="jumlah" id="jumlah" rows="3" value="{{ old('jumlah') }}" >
             </div>
           </div>
           <hr><br>
