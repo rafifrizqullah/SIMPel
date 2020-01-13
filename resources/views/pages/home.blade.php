@@ -56,14 +56,14 @@
 		</div>
 	</div>
 
-	<div class="container text-center">
+	{{-- <div class="container text-center">
 		<h3 style="font-weight:bold; color: orange;">Live Streaming</h3>
 		<div class="col-sm-7 mx-auto d-block">
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/CDGJcIQYLzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<br>
 	<div class="container">
 		<h3 style="font-weight:bold; color: orange;">Berita Terbaru</h3>
